@@ -16,7 +16,7 @@
 - [x] Run full R1 after the timing gate selected `pilot`.
 - [x] Run R2 and R3.
 - [x] Generate measured tables/figures and Vietnamese pilot report.
-- [ ] Generate and visually inspect the English PPTX/PDF and speaker notes.
+- [x] Generate and visually inspect the English PPTX/PDF and speaker notes.
 
 ## Eight-to-twelve-week extension
 

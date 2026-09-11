@@ -17,3 +17,13 @@
 - `validation/`: cold workflow audit log, SVG quality reports, and PPTX postflight audit reports
 - `exports/`: final native DrawingML pptx deliverables only (timestamped); `_native_charts_tables.pptx` name with `--native-charts-and-tables`, `_narrated.pptx` name when narration audio is embedded
 - `backup/<timestamp>/`: svg_output/ archive (always written in default-flow mode; safe to delete old timestamps)
+
+## Published artifacts
+
+- `../../deliverables/Quanova_Photonic_QML_Interview_Case_Study_20260911.pptx`
+- `../../deliverables/Quanova_Photonic_QML_Interview_Case_Study_20260911.pdf`
+- `notes/total.md`: complete English speaker notes, split one-to-one into `P01.md` through `P10.md`
+
+The final SVG quality gate reported zero blocking findings. The native PPTX package passed
+postflight with ten slides and ten note pages. A PowerPoint-rendered contact sheet was inspected,
+including a source-level repair to the finite-shot chart axis labels before the final export.

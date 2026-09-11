@@ -237,9 +237,27 @@ def summarize_runs(root: Path) -> dict:
 
     fig, left = plt.subplots(figsize=(8, 4.8))
     right = left.twinx()
-    left.errorbar(shots_summary["launched_shots"], shots_summary["macro_f1_mean"], yerr=shots_summary["macro_f1_std"], marker="o", color="#16697A")
-    right.plot(shots_summary["launched_shots"], shots_summary["acceptance_mean"], marker="s", color="#E76F51")
-    left.set(xscale="log", xlabel="Launched shots per image", ylabel="Macro-F1", ylim=(0, 1.02))
+    shot_positions = np.arange(len(shots_summary))
+    left.errorbar(
+        shot_positions,
+        shots_summary["macro_f1_mean"],
+        yerr=shots_summary["macro_f1_std"],
+        marker="o",
+        color="#16697A",
+    )
+    right.plot(
+        shot_positions,
+        shots_summary["acceptance_mean"],
+        marker="s",
+        color="#E76F51",
+    )
+    left.set(
+        xticks=shot_positions,
+        xticklabels=[f"{int(value):,}" for value in shots_summary["launched_shots"]],
+        xlabel="Launched shots per image",
+        ylabel="Macro-F1",
+        ylim=(0, 1.02),
+    )
     right.set(ylabel="Acceptance rate", ylim=(0, 1.02))
     _save_figure(fig, figure_dir, "finite_shot_sensitivity", shots_summary)
 

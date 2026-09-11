@@ -12,8 +12,18 @@ small label budgets. It is not designed to claim quantum advantage.
 - CLIP extraction, seven model families, ideal simulation, finite-shot inference, resume, result
   aggregation, and Perceval cross-checking are implemented.
 - R1, R2, and R3 are complete: 1,428 classifier fits and 164 test evaluations in total.
-- The measured Vietnamese report is in `reports/pilot_report_vi.md`; slide production is tracked in
-  `PLAN.md`.
+- The measured Vietnamese report, interview Q&A, English slide deck, PDF, and speaker notes are complete.
+
+## Interview deliverables
+
+- [Editable PowerPoint deck](deliverables/Quanova_Photonic_QML_Interview_Case_Study_20260911.pptx)
+- [Presentation PDF](deliverables/Quanova_Photonic_QML_Interview_Case_Study_20260911.pdf)
+- [Vietnamese pilot report](reports/pilot_report_vi.md)
+- [Vietnamese interview Q&A](reports/interview_qa_vi.md)
+- [English speaker notes](presentation/quanova_interview_case_study_ppt169_20260911/notes/total.md)
+
+The deck contains ten native DrawingML slides with embedded speaker notes. Its final package
+postflight passed, and all slides were rendered through Microsoft PowerPoint for visual inspection.
 
 ## Reproduce
 

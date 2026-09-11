@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-page-role="cover">
+  <rect id="page-bg" data-pptx-role="background" x="0" y="0" width="1280" height="720" fill="#FBF7EE" />
+  <rect id="top-rule" data-pptx-role="decoration" x="0" y="0" width="1280" height="10" fill="#2D7A78" />
+  <g id="cover-title" data-pptx-bounds="72 48 1136 287">
+    <text x="72" y="75" font-family="Arial" font-size="18" font-weight="700" letter-spacing="1.5" fill="#2D7A78">QUANOVA · INTERVIEW CASE STUDY</text>
+    <text font-size="42" font-weight="700" fill="#1C2D38" font-family="Georgia" x="72" y="154">
+      <tspan>A reproducible photonic pilot</tspan>
+      </text><text font-size="42" font-weight="700" fill="#1C2D38" font-family="Georgia" x="72" y="206"><tspan>delivers a useful negative result</tspan>
+    </text><text font-size="23" fill="#222222" font-family="Arial" x="72" y="294">
+      <tspan>Few-label steel defect classification · ideal photonic simulation</tspan>
+      </text><text font-size="23" fill="#222222" font-family="Arial" x="72" y="326"><tspan>One outer-fold pilot · frozen protocol · measured on 11 Sep 2026</tspan>
+    </text></g>
+  <g id="metric-contrast" data-pptx-bounds="72 388 1136 186">
+    <line x1="72" y1="388" x2="1208" y2="388" stroke="#1C2D38" stroke-width="2" />
+    <text x="72" y="433" font-family="Arial" font-size="18" font-weight="700" letter-spacing="1" fill="#D84924">PHOTONIC Q1</text>
+    <text x="72" y="518" font-family="Consolas" font-size="74" font-weight="700" fill="#D84924">0.8708</text>
+    <text x="72" y="553" font-family="Arial" font-size="18" fill="#222222">macro-F1 · 48 labels per class</text>
+    <line x1="530" y1="414" x2="530" y2="574" stroke="#C9BDA8" stroke-width="2" />
+    <text x="570" y="433" font-family="Arial" font-size="18" font-weight="700" letter-spacing="1" fill="#2D7A78">FULL CLIP + LINEAR</text>
+    <text x="570" y="518" font-family="Consolas" font-size="74" font-weight="700" fill="#2D7A78">0.9852</text>
+    <text x="570" y="553" font-family="Arial" font-size="18" fill="#222222">macro-F1 · same test fold</text>
+    <rect x="1008" y="421" width="200" height="132" fill="#EFE6D5" />
+    <text x="1108" y="463" text-anchor="middle" font-family="Arial" font-size="18" font-weight="700" fill="#D84924">Q1 − B1</text>
+    <text x="1108" y="518" text-anchor="middle" font-family="Consolas" font-size="38" font-weight="700" fill="#D84924">−0.1143</text>
+  </g>
+  <g id="cover-conclusion" data-pptx-bounds="72 606 1136 52">
+    <rect x="72" y="606" width="1136" height="52" fill="#1C2D38" />
+    <text x="96" y="639" font-family="Arial" font-size="22" font-weight="700" fill="#FBF7EE">Q1 beats locked RFF — but not ELM, RBF-SVM, or the full embedding.</text>
+  </g>
+  <g id="page-index" data-pptx-bounds="1120 668 88 28"><text x="1208" y="690" text-anchor="end" font-family="Arial" font-size="18" fill="#766E62">01 / 10</text></g>
+</svg>

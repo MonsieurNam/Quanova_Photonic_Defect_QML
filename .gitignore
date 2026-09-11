@@ -20,3 +20,10 @@ runs/*
 *.pth
 *.npz
 *.egg-info/
+
+# PPT Master runtime artifacts; stable presentation deliverables are copied to deliverables/.
+presentation/**/backup/
+presentation/**/confirm_ui/
+presentation/**/exports/
+presentation/**/live_preview/
+presentation/**/validation/

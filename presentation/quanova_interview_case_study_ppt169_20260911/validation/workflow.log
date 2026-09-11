@@ -50,3 +50,385 @@ stdout:
     [OK] Found table: P1 (lines)
 === 2026-09-11T16:05:43.155Z END run=34a97f132954 elapsed_ms=239 output_lines=7 retained=1 omitted=6 ===
 === 2026-09-11T16:05:43.215Z END run=de695de1320b elapsed_ms=4577 output_lines=128 retained=1 omitted=127 ===
+
+=== 2026-09-11T16:16:38.639Z PYTHON run=8dfe9755cdcb ===
+cwd: D:\Personal_Information\Quanova_Photonic_Defect_QML
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\confirm_ui\\server.py", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911", "--reset-template-selection"]
+stderr:
+  [23:16:38] [INFO] confirm_ui: template selection artifacts already absent
+=== 2026-09-11T16:16:38.643Z END run=8dfe9755cdcb elapsed_ms=4 output_lines=1 retained=1 omitted=0 ===
+
+=== 2026-09-11T16:17:12.329Z PYTHON run=24cad42d886f ===
+cwd: D:\Personal_Information\Quanova_Photonic_Defect_QML
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\confirm_ui\\server.py", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911", "--daemon"]
+stderr:
+  [23:17:13] [INFO] confirm_ui: log: D:\Personal_Information\Quanova_Photonic_Defect_QML\presentation\quanova_interview_case_study_ppt169_20260911\confirm_ui\server.log
+  [23:17:14] [INFO] confirm_ui: started confirm UI in background: http://127.0.0.1:5050 (pid=16272)
+=== 2026-09-11T16:17:14.521Z END run=24cad42d886f elapsed_ms=2192 output_lines=2 retained=2 omitted=0 ===
+
+=== 2026-09-11T16:17:45.009Z PYTHON run=959420e60447 ===
+cwd: D:\Personal_Information\Quanova_Photonic_Defect_QML
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\confirm_ui\\server.py", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911", "--wait-only", "--wait-stage", "stage1"]
+stderr:
+  [23:17:45] [INFO] confirm_ui: waiting for browser confirmation stage=stage1...
+  [23:17:50] [ERROR] confirm_ui: confirmation stage=stage1 is not ready: template_options.json must be newer than the prior result.json
+=== 2026-09-11T16:17:50.543Z END run=959420e60447 elapsed_ms=5533 output_lines=2 retained=2 omitted=0 ===
+
+=== 2026-09-11T16:18:15.606Z PYTHON run=dff0fcd0a693 ===
+cwd: D:\Personal_Information\Quanova_Photonic_Defect_QML
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\confirm_ui\\server.py", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911", "--complete-template-selection"]
+stderr:
+  [23:18:15] [INFO] confirm_ui: template selection handoff written to D:\Personal_Information\Quanova_Photonic_Defect_QML\presentation\quanova_interview_case_study_ppt169_20260911\confirm_ui\template_handoff.json
+=== 2026-09-11T16:18:15.625Z END run=dff0fcd0a693 elapsed_ms=19 output_lines=1 retained=1 omitted=0 ===
+
+=== 2026-09-11T16:21:01.399Z PYTHON run=5e1102866ac9 ===
+cwd: D:\Personal_Information\Quanova_Photonic_Defect_QML
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\confirm_ui\\server.py", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911", "--wait-only"]
+stderr:
+  [23:21:01] [INFO] confirm_ui: waiting for browser confirmation stage=final...
+  [23:22:39] [INFO] confirm_ui: confirmation stage=final received: D:\Personal_Information\Quanova_Photonic_Defect_QML\presentation\quanova_interview_case_study_ppt169_20260911\confirm_ui\result.json
+=== 2026-09-11T16:22:39.781Z END run=5e1102866ac9 elapsed_ms=98382 output_lines=2 retained=2 omitted=0 ===
+
+=== 2026-09-11T16:23:32.636Z PYTHON run=9f4563d250e3 ===
+cwd: D:\Personal_Information\Quanova_Photonic_Defect_QML
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\analyze_images.py", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911\\images"]
+stdout:
+  [REPORT] Image analysis CSV: D:\Personal_Information\Quanova_Photonic_Defect_QML\presentation\quanova_interview_case_study_ppt169_20260911\analysis\image_analysis.csv
+=== 2026-09-11T16:23:33.016Z END run=9f4563d250e3 elapsed_ms=379 output_lines=38 retained=1 omitted=37 ===
+
+=== 2026-09-11T16:24:25.762Z PYTHON run=c6fe32a8d91c ===
+cwd: D:\Personal_Information\Quanova_Photonic_Defect_QML
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\icon_sync.py", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911", "tabler-filled/photo", "tabler-filled/flask-2", "tabler-filled/chart-dots-3", "tabler-filled/shield-check", "tabler-filled/bulb", "simple-icons/github"]
+stderr:
+  [OK] 6 icon(s) in D:\Personal_Information\Quanova_Photonic_Defect_QML\presentation\quanova_interview_case_study_ppt169_20260911\icons:
+       + tabler-filled/photo
+       + tabler-filled/flask-2
+       + tabler-filled/chart-dots-3
+       + tabler-filled/shield-check
+       + tabler-filled/bulb
+       + simple-icons/github
+=== 2026-09-11T16:24:25.772Z END run=c6fe32a8d91c elapsed_ms=9 output_lines=7 retained=7 omitted=0 ===
+
+=== 2026-09-11T16:26:27.714Z PYTHON run=5208780c0678 ===
+cwd: D:\Personal_Information\Quanova_Photonic_Defect_QML
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\project_manager.py", "validate", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911"]
+stdout:
+  [ERROR]
+    - Communication trace: missing spec_lock.md with a ## communication section.
+  [WARN]
+    - svg_output directory is empty, no SVG files found
+  [ERROR] Project structure is invalid.
+=== 2026-09-11T16:26:29.079Z END run=5208780c0678 elapsed_ms=1364 output_lines=7 retained=5 omitted=2 ===
+
+=== 2026-09-11T16:26:46.944Z PYTHON run=c7bf970f696b ===
+cwd: D:\Personal_Information\Quanova_Photonic_Defect_QML
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\confirm_ui\\server.py", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911", "--shutdown"]
+stderr:
+  [23:26:46] [INFO] confirm_ui: no confirm server running — nothing to stop
+=== 2026-09-11T16:26:46.947Z END run=c7bf970f696b elapsed_ms=3 output_lines=1 retained=1 omitted=0 ===
+
+=== 2026-09-11T16:27:20.340Z PYTHON run=5e1d314be231 ===
+cwd: D:\Personal_Information\Quanova_Photonic_Defect_QML
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\project_manager.py", "validate", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911"]
+stdout:
+  [WARN]
+  [OK] Project structure is valid, with warnings.
+=== 2026-09-11T16:27:21.866Z END run=5e1d314be231 elapsed_ms=1525 output_lines=5 retained=2 omitted=3 ===
+
+=== 2026-09-11T16:28:10.709Z PYTHON run=c7305f95c97c ===
+cwd: D:\Personal_Information\Quanova_Photonic_Defect_QML
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\svg_editor\\server.py", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911", "--live", "--daemon"]
+stderr:
+  [23:28:12] [INFO] svg_editor: started live preview in background: http://127.0.0.1:6060 (pid=24480)
+  [23:28:12] [INFO] svg_editor: log: D:\Personal_Information\Quanova_Photonic_Defect_QML\presentation\quanova_interview_case_study_ppt169_20260911\live_preview\server.log
+=== 2026-09-11T16:28:12.377Z END run=c7305f95c97c elapsed_ms=1667 output_lines=2 retained=2 omitted=0 ===
+
+=== 2026-09-11T16:29:04.145Z PYTHON run=25ec9043a57d ===
+cwd: D:\Personal_Information\Quanova_Photonic_Defect_QML
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\svg_quality_checker.py", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911", "--stage", "first-page", "--json"]
+stdout:
+  [ERROR] P01.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] Detected 3 visible root-level <g> module(s) without explicit data-pptx-bounds (<g id="cover-title">; <g id="metric-contrast">; <g id="cover-conclusion">); every final-page/template root <g> other than a compact authored-preset atom declares its root-coordinate layout subcanvas even when it also carries native coordinates
+     [WARN] Font stack exports non-PPT-safe typeface(s) to PPTX (latin=Cascadia Mono): Cascadia Mono
+     [WARN] 2 ungrouped top-level Slide-local element(s) in svg_output (<rect> #2, <text> #6); group only logical content units in a top-level <g id="...">. Keep genuine static page framing as a root primitive and declare a supported data-pptx-role such as "background" or "decoration"
+  [SUMMARY] Check Summary
+  Total files: 1
+    [OK] Fully passed: 0 (0%)
+    [WARN] With warnings: 0 (0%)
+    [ERROR] With errors: 1 (100%)
+  Provenance categories:
+    blocking: 1          hard findings; gate also requires exit 0
+    introduced: 2        advisory; new or changed
+    inherited: 0         informational; prototype-identical
+    source-import: 0     informational; source-conversion loss
+  [CARRIERS] Actual-use receipt (informational; not a quota)
+    Pages: 1 | text: 13 | images: 0 | icons: 0
+    Geometry: SVG elements 6 | native presets 0 | page-frame elements 0 | marker uses 0
+    Native objects: charts 0 | tables 0 | formulas 0
+    Presets: (none)
+  [REPORT] JSON quality report exported: D:\Personal_Information\Quanova_Photonic_Defect_QML\presentation\quanova_interview_case_study_ppt169_20260911\validation\svg_quality_first_page_report.json
+=== 2026-09-11T16:29:06.017Z END run=25ec9043a57d elapsed_ms=1871 output_lines=44 retained=21 omitted=23 ===
+
+=== 2026-09-11T16:30:53.668Z PYTHON run=712715b50372 ===
+cwd: D:\Personal_Information\Quanova_Photonic_Defect_QML
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\project_manager.py", "validate", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911"]
+stdout:
+  [WARN]
+  [OK] Project structure is valid, with warnings.
+=== 2026-09-11T16:30:54.881Z END run=712715b50372 elapsed_ms=1212 output_lines=5 retained=2 omitted=3 ===
+
+=== 2026-09-11T16:30:55.124Z PYTHON run=56599779c45d ===
+cwd: D:\Personal_Information\Quanova_Photonic_Defect_QML
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\svg_quality_checker.py", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911", "--stage", "first-page", "--json"]
+stdout:
+  [ERROR] P01.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=72, y=75; text='QUANOVA · INTERVIEW …') exceeds <g id="cover-title"> data-pptx-bounds on the vertical axis: content (72.0, 59.7)-(410.1, 81.3), container (72.0, 75.0)-(1208.0, 335.0), overflow horizontal 0.0%, vertical 5.9%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [ERROR] <text> (x=1208, y=690; text='01 / 10') exceeds <g id="page-index"> data-pptx-bounds on the vertical axis: content (1147.7, 674.7)-(1208.0, 696.3), container (1120.0, 670.0)-(1208.0, 690.0), overflow horizontal 0.0%, vertical 31.5%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+  [SUMMARY] Check Summary
+  Total files: 1
+    [OK] Fully passed: 0 (0%)
+    [WARN] With warnings: 0 (0%)
+    [ERROR] With errors: 1 (100%)
+  Provenance categories:
+    blocking: 2          hard findings; gate also requires exit 0
+    introduced: 0        advisory; new or changed
+    inherited: 0         informational; prototype-identical
+    source-import: 0     informational; source-conversion loss
+  [CARRIERS] Actual-use receipt (informational; not a quota)
+    Pages: 1 | text: 13 | images: 0 | icons: 0
+    Geometry: SVG elements 6 | native presets 0 | page-frame elements 2 | marker uses 0
+    Native objects: charts 0 | tables 0 | formulas 0
+    Presets: (none)
+  Issue categories:
+    Other: 2
+  [REPORT] JSON quality report exported: D:\Personal_Information\Quanova_Photonic_Defect_QML\presentation\quanova_interview_case_study_ppt169_20260911\validation\svg_quality_first_page_report.json
+=== 2026-09-11T16:30:56.734Z END run=56599779c45d elapsed_ms=1610 output_lines=43 retained=22 omitted=21 ===
+
+=== 2026-09-11T16:31:12.095Z PYTHON run=32575b61273b ===
+cwd: D:\Personal_Information\Quanova_Photonic_Defect_QML
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\svg_quality_checker.py", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911", "--stage", "first-page", "--json"]
+stdout:
+  [OK] P01.svg - Passed
+  [SUMMARY] Check Summary
+  Total files: 1
+    [OK] Fully passed: 1 (100%)
+    [WARN] With warnings: 0 (0%)
+    [ERROR] With errors: 0 (0%)
+  Provenance categories:
+    blocking: 0          hard findings; gate also requires exit 0
+    introduced: 0        advisory; new or changed
+    inherited: 0         informational; prototype-identical
+    source-import: 0     informational; source-conversion loss
+  [CARRIERS] Actual-use receipt (informational; not a quota)
+    Pages: 1 | text: 13 | images: 0 | icons: 0
+    Geometry: SVG elements 6 | native presets 0 | page-frame elements 2 | marker uses 0
+  [REPORT] JSON quality report exported: D:\Personal_Information\Quanova_Photonic_Defect_QML\presentation\quanova_interview_case_study_ppt169_20260911\validation\svg_quality_first_page_report.json
+=== 2026-09-11T16:31:13.586Z END run=32575b61273b elapsed_ms=1491 output_lines=33 retained=15 omitted=18 ===
+
+=== 2026-09-11T16:43:13.572Z PYTHON run=2baa0ce21711 ===
+cwd: D:\Personal_Information\Quanova_Photonic_Defect_QML
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\svg_quality_checker.py", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911", "--stage", "final", "--json"]
+stdout:
+  [OK] P01.svg - Passed
+  [ERROR] P03.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] spec_lock typography-size recurrence: undeclared font-size 28 (9 occurrences) exceeds the sparse-display limit of 2 occurrences. Structural text must return to its declared role band; a genuinely recurring display treatment needs a justified named role in the Design Spec and spec_lock.
+     [WARN] <text> (x=64, y=559; text='[1,0,1,0,0,0]') exceeds <g id="map-details"> data-pptx-bounds on the vertical axis: content (64.0, 540.3)-(221.3, 566.7), container (64.0, 350.0)-(524.0, 564.0), overflow horizontal 0.0%, vertical 1.3%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Detected 2 paragraph-like line run(s) split across sibling <text> elements (<g id="map-details"> x=64.0, y=450.0..480.0, 2 lines; <g id="verification"> x=570.0, y=564.0..594.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy="0". Keep semantically independent text frames separate.
+  [WARN] P04.svg - Passed (with warnings)
+     viewBox: 0 0 1280 720
+     [WARN] Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id="evaluation-ledger"> x=838.0, y=500.0..599.0, 4 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy="0". Keep semantically independent text frames separate.
+  [ERROR] P05.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=944, y=509; text='Q1 learns useful str…') exceeds <g id="learning-curve-takeaway"> data-pptx-bounds on the horizontal axis: content (944.0, 491.1)-(1234.7, 516.4), container (920.0, 154.0)-(1216.0, 630.0), overflow horizontal 6.3%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [ERROR] <text> (x=64, y=659; text='Mean ± sample SD acr…') exceeds <g id="source"> data-pptx-bounds on the vertical axis: content (64.0, 643.7)-(699.4, 665.3), container (64.0, 640.0)-(1064.0, 664.0), overflow horizontal 0.0%, vertical 5.4%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] <text> (x=920, y=603; text='discarding the full …') exceeds <g id="learning-curve-takeaway"> data-pptx-bounds on the horizontal axis: content (920.0, 585.1)-(1229.7, 610.4), container (920.0, 154.0)-(1216.0, 630.0), overflow horizontal 4.6%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id="learning-curve-takeaway"> x=920.0, y=574.0..603.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy="0". Keep semantically independent text frames separate.
+  [ERROR] P06.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=64, y=659; text='Source: compression.…') exceeds <g id="source"> data-pptx-bounds on the vertical axis: content (64.0, 643.7)-(460.0, 665.3), container (64.0, 640.0)-(914.0, 664.0), overflow horizontal 0.0%, vertical 5.4%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id="compression-deltas"> x=856.0, y=596.0..622.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy="0". Keep semantically independent text frames separate.
+  [ERROR] P07.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=64, y=667; text='Subset-paired descri…') exceeds <g id="source"> data-pptx-bounds on the vertical axis: content (64.0, 651.7)-(903.7, 673.3), container (64.0, 648.0)-(1064.0, 672.0), overflow horizontal 0.0%, vertical 5.4%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+  [ERROR] P08.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=64, y=655; text='45 sampled-inference…') exceeds <g id="source"> data-pptx-bounds on the vertical axis: content (64.0, 639.7)-(592.3, 661.3), container (64.0, 636.0)-(1014.0, 660.0), overflow horizontal 0.0%, vertical 5.4%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [ERROR] spec_lock typography-size recurrence: undeclared font-size 28 (9 occurrences) exceeds the sparse-display limit of 2 occurrences. Structural text must return to its declared role band; a genuinely recurring display treatment needs a justified named role in the Design Spec and spec_lock.
+  [ERROR] P09.svg - Failed
+     viewBox: 0 0 1280 720
+     [ERROR] <text> (x=64, y=655; text='Local CPU profiling …') exceeds <g id="source"> data-pptx-bounds on the vertical axis: content (64.0, 639.7)-(735.4, 661.3), container (64.0, 636.0)-(1014.0, 660.0), overflow horizontal 0.0%, vertical 5.4%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+  [WARN] P10.svg - Passed (with warnings)
+     viewBox: 0 0 1280 720
+     [WARN] <text> (x=64, y=125; text='Continue only if a f…') exceeds <g id="closing-title"> data-pptx-bounds on the horizontal axis: content (64.0, 91.0)-(1237.9, 139.0), container (64.0, 42.0)-(1216.0, 172.0), overflow horizontal 1.9%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] <text> (x=1160, y=357; text='harder dataset') exceeds <g id="roadmap"> data-pptx-bounds on the horizontal axis: content (1093.0, 341.7)-(1227.0, 363.3), container (64.0, 194.0)-(1216.0, 388.0), overflow horizontal 1.0%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+     [WARN] Detected 1 paragraph-like line run(s) split across sibling <text> elements (<g id="decision-gate"> x=882.0, y=507.0..538.0, 2 lines). If each run is one prose paragraph, combine it into one <text>: keep its first line as direct text and use direct <tspan> children with the parent x and positive relative dy values for later lines. An all-<tspan> form may start with dy="0". Keep semantically independent text frames separate.
+  [SUMMARY] Check Summary
+  Total files: 10
+    [OK] Fully passed: 2 (20%)
+    [WARN] With warnings: 2 (20%)
+    [ERROR] With errors: 17 (100%)
+  Provenance categories:
+    blocking: 19         hard findings; gate also requires exit 0
+    introduced: 9        advisory; new or changed
+    inherited: 0         informational; prototype-identical
+    source-import: 0     informational; source-conversion loss
+  [CARRIERS] Actual-use receipt (informational; not a quota)
+    Pages: 10 | text: 197 | images: 11 | icons: 0
+    Geometry: SVG elements 79 | native presets 0 | page-frame elements 20 | marker uses 0
+  [REPORT] JSON quality report exported: D:\Personal_Information\Quanova_Photonic_Defect_QML\presentation\quanova_interview_case_study_ppt169_20260911\validation\svg_quality_report.json
+=== 2026-09-11T16:43:15.589Z END run=2baa0ce21711 elapsed_ms=2016 output_lines=102 retained=48 omitted=54 ===
+
+=== 2026-09-11T16:47:34.398Z PYTHON run=e1cc57cd4c4a ===
+cwd: D:\Personal_Information\Quanova_Photonic_Defect_QML
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\svg_quality_checker.py", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911", "--stage", "final", "--json"]
+stdout:
+  [OK] P01.svg - Passed
+  [WARN] P03.svg - Passed (with warnings)
+     [WARN] Cannot verify root viewBox bounds for visible text with unsupported or unresolved geometry: <text> (x=64, y=450; text='Seeds 101 · 202 · 30…'), <text> (x=570, y=564; text='Perceval 1.2.4 · 4.1…'); use supported explicit text positioning when page fit matters
+     [WARN] <text> (x=877, y=418; text='U(x) = U · D(x) · U …') exceeds <g id="formula"> data-pptx-bounds on the horizontal axis: content (519.2, 392.5)-(1234.8, 428.5), container (538.0, 364.0)-(1216.0, 456.0), overflow horizontal 2.8%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+  [WARN] P04.svg - Passed (with warnings)
+  [SUMMARY] Check Summary
+  Total files: 10
+    [OK] Fully passed: 5 (50%)
+    [WARN] With warnings: 5 (50%)
+    [ERROR] With errors: 0 (0%)
+  Provenance categories:
+    blocking: 0          hard findings; gate also requires exit 0
+    introduced: 7        advisory; new or changed
+    inherited: 0         informational; prototype-identical
+    source-import: 0     informational; source-conversion loss
+  [CARRIERS] Actual-use receipt (informational; not a quota)
+    Pages: 10 | text: 191 | images: 11 | icons: 0
+    Geometry: SVG elements 79 | native presets 0 | page-frame elements 20 | marker uses 0
+  [REPORT] JSON quality report exported: D:\Personal_Information\Quanova_Photonic_Defect_QML\presentation\quanova_interview_case_study_ppt169_20260911\validation\svg_quality_report.json
+=== 2026-09-11T16:47:36.343Z END run=e1cc57cd4c4a elapsed_ms=1945 output_lines=74 retained=19 omitted=55 ===
+
+=== 2026-09-11T16:49:39.107Z PYTHON run=a478c1d28a66 ===
+cwd: D:\Personal_Information\Quanova_Photonic_Defect_QML
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\total_md_split.py", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911"]
+stdout:
+  [OK] SVG files and notes have one-to-one correspondence
+  [Done] Successfully generated 10/10 file(s)
+  [Done] Notes splitting complete
+=== 2026-09-11T16:49:39.136Z END run=a478c1d28a66 elapsed_ms=28 output_lines=19 retained=3 omitted=16 ===
+
+=== 2026-09-11T16:49:46.980Z PYTHON run=40fa6ee143ab ===
+cwd: D:\Personal_Information\Quanova_Photonic_Defect_QML
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\finalize_svg.py", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911"]
+stdout:
+  [OK] Done!
+=== 2026-09-11T16:49:49.719Z END run=40fa6ee143ab elapsed_ms=2739 output_lines=12 retained=1 omitted=11 ===
+
+=== 2026-09-11T16:49:56.182Z PYTHON run=b6fbd284a5f0 ===
+cwd: D:\Personal_Information\Quanova_Photonic_Defect_QML
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\svg_to_pptx.py", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911"]
+stdout:
+  [Done] Saved: D:\Personal_Information\Quanova_Photonic_Defect_QML\presentation\quanova_interview_case_study_ppt169_20260911\exports\quanova_interview_case_study_20260911_234958.pptx
+    [POSTFLIGHT] status=passed-with-warnings quality_gate=passed slides=10 warning_categories=1
+    [POSTFLIGHT][WARNING] quality_introduced_warnings=7
+    [PPTX] D:\Personal_Information\Quanova_Photonic_Defect_QML\presentation\quanova_interview_case_study_ppt169_20260911\exports\quanova_interview_case_study_20260911_234958.pptx
+    [REPORT] D:\Personal_Information\Quanova_Photonic_Defect_QML\presentation\quanova_interview_case_study_ppt169_20260911\validation\quanova_interview_case_study_20260911_234958.report.json
+=== 2026-09-11T16:50:03.164Z END run=b6fbd284a5f0 elapsed_ms=6981 output_lines=47 retained=5 omitted=42 ===
+
+=== 2026-09-11T16:53:07.563Z PYTHON run=3f7542e4eaa2 ===
+cwd: D:\Personal_Information\Quanova_Photonic_Defect_QML
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\svg_quality_checker.py", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911", "--stage", "final", "--json"]
+stdout:
+  [OK] P01.svg - Passed
+  [WARN] P03.svg - Passed (with warnings)
+     [WARN] Cannot verify root viewBox bounds for visible text with unsupported or unresolved geometry: <text> (x=64, y=450; text='Seeds 101 · 202 · 30…'), <text> (x=570, y=564; text='Perceval 1.2.4 · 4.1…'); use supported explicit text positioning when page fit matters
+     [WARN] <text> (x=877, y=418; text='U(x) = U · D(x) · U …') exceeds <g id="formula"> data-pptx-bounds on the horizontal axis: content (519.2, 392.5)-(1234.8, 428.5), container (538.0, 364.0)-(1216.0, 456.0), overflow horizontal 2.8%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+  [WARN] P04.svg - Passed (with warnings)
+  [SUMMARY] Check Summary
+  Total files: 10
+    [OK] Fully passed: 5 (50%)
+    [WARN] With warnings: 5 (50%)
+    [ERROR] With errors: 0 (0%)
+  Provenance categories:
+    blocking: 0          hard findings; gate also requires exit 0
+    introduced: 7        advisory; new or changed
+    inherited: 0         informational; prototype-identical
+    source-import: 0     informational; source-conversion loss
+  [CARRIERS] Actual-use receipt (informational; not a quota)
+    Pages: 10 | text: 191 | images: 11 | icons: 0
+    Geometry: SVG elements 79 | native presets 0 | page-frame elements 20 | marker uses 0
+  [REPORT] JSON quality report exported: D:\Personal_Information\Quanova_Photonic_Defect_QML\presentation\quanova_interview_case_study_ppt169_20260911\validation\svg_quality_report.json
+=== 2026-09-11T16:53:09.573Z END run=3f7542e4eaa2 elapsed_ms=2010 output_lines=74 retained=19 omitted=55 ===
+
+=== 2026-09-11T16:53:15.497Z PYTHON run=9bcdba8a5cc8 ===
+cwd: D:\Personal_Information\Quanova_Photonic_Defect_QML
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\finalize_svg.py", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911"]
+stdout:
+  [OK] Done!
+=== 2026-09-11T16:53:18.127Z END run=9bcdba8a5cc8 elapsed_ms=2629 output_lines=12 retained=1 omitted=11 ===
+
+=== 2026-09-11T16:53:23.797Z PYTHON run=9309327af4f0 ===
+cwd: D:\Personal_Information\Quanova_Photonic_Defect_QML
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\svg_to_pptx.py", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911"]
+stdout:
+  [Done] Saved: D:\Personal_Information\Quanova_Photonic_Defect_QML\presentation\quanova_interview_case_study_ppt169_20260911\exports\quanova_interview_case_study_20260911_235325.pptx
+    [POSTFLIGHT] status=passed-with-warnings quality_gate=passed slides=10 warning_categories=1
+    [POSTFLIGHT][WARNING] quality_introduced_warnings=7
+    [PPTX] D:\Personal_Information\Quanova_Photonic_Defect_QML\presentation\quanova_interview_case_study_ppt169_20260911\exports\quanova_interview_case_study_20260911_235325.pptx
+    [REPORT] D:\Personal_Information\Quanova_Photonic_Defect_QML\presentation\quanova_interview_case_study_ppt169_20260911\validation\quanova_interview_case_study_20260911_235325.report.json
+=== 2026-09-11T16:53:27.880Z END run=9309327af4f0 elapsed_ms=4082 output_lines=47 retained=5 omitted=42 ===
+
+=== 2026-09-11T16:59:55.558Z PYTHON run=8b4ac41143b2 ===
+cwd: D:\Personal_Information\Quanova_Photonic_Defect_QML
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\analyze_images.py", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911"]
+stdout:
+  [REPORT] Image analysis CSV: D:\Personal_Information\Quanova_Photonic_Defect_QML\presentation\analysis\image_analysis.csv
+=== 2026-09-11T16:59:55.639Z END run=8b4ac41143b2 elapsed_ms=80 output_lines=3 retained=1 omitted=2 ===
+
+=== 2026-09-11T17:00:18.736Z PYTHON run=8903c9be15c5 ===
+cwd: D:\Personal_Information\Quanova_Photonic_Defect_QML
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\analyze_images.py", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911\\images"]
+stdout:
+  [REPORT] Image analysis CSV: D:\Personal_Information\Quanova_Photonic_Defect_QML\presentation\quanova_interview_case_study_ppt169_20260911\analysis\image_analysis.csv
+=== 2026-09-11T17:00:18.963Z END run=8903c9be15c5 elapsed_ms=227 output_lines=38 retained=1 omitted=37 ===
+
+=== 2026-09-11T17:00:37.614Z PYTHON run=0b4e781ed75d ===
+cwd: D:\Personal_Information\Quanova_Photonic_Defect_QML
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\svg_quality_checker.py", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911", "--stage", "final", "--json"]
+stdout:
+  [OK] P01.svg - Passed
+  [WARN] P03.svg - Passed (with warnings)
+     [WARN] Cannot verify root viewBox bounds for visible text with unsupported or unresolved geometry: <text> (x=64, y=450; text='Seeds 101 · 202 · 30…'), <text> (x=570, y=564; text='Perceval 1.2.4 · 4.1…'); use supported explicit text positioning when page fit matters
+     [WARN] <text> (x=877, y=418; text='U(x) = U · D(x) · U …') exceeds <g id="formula"> data-pptx-bounds on the horizontal axis: content (519.2, 392.5)-(1234.8, 428.5), container (538.0, 364.0)-(1216.0, 456.0), overflow horizontal 2.8%, vertical 0.0%; expand the root module bounds into available non-overlapping space; otherwise reflow the text
+  [WARN] P04.svg - Passed (with warnings)
+  [SUMMARY] Check Summary
+  Total files: 10
+    [OK] Fully passed: 5 (50%)
+    [WARN] With warnings: 5 (50%)
+    [ERROR] With errors: 0 (0%)
+  Provenance categories:
+    blocking: 0          hard findings; gate also requires exit 0
+    introduced: 7        advisory; new or changed
+    inherited: 0         informational; prototype-identical
+    source-import: 0     informational; source-conversion loss
+  [CARRIERS] Actual-use receipt (informational; not a quota)
+    Pages: 10 | text: 191 | images: 11 | icons: 0
+    Geometry: SVG elements 79 | native presets 0 | page-frame elements 20 | marker uses 0
+  [REPORT] JSON quality report exported: D:\Personal_Information\Quanova_Photonic_Defect_QML\presentation\quanova_interview_case_study_ppt169_20260911\validation\svg_quality_report.json
+=== 2026-09-11T17:00:39.505Z END run=0b4e781ed75d elapsed_ms=1891 output_lines=74 retained=19 omitted=55 ===
+
+=== 2026-09-11T17:00:45.029Z PYTHON run=61819970b407 ===
+cwd: D:\Personal_Information\Quanova_Photonic_Defect_QML
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\finalize_svg.py", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911"]
+stdout:
+  [OK] Done!
+=== 2026-09-11T17:00:47.572Z END run=61819970b407 elapsed_ms=2543 output_lines=12 retained=1 omitted=11 ===
+
+=== 2026-09-11T17:01:01.814Z PYTHON run=b291b69c482d ===
+cwd: D:\Personal_Information\Quanova_Photonic_Defect_QML
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\svg_to_pptx.py", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911"]
+stdout:
+  [Done] Saved: D:\Personal_Information\Quanova_Photonic_Defect_QML\presentation\quanova_interview_case_study_ppt169_20260911\exports\quanova_interview_case_study_20260912_000103.pptx
+    [POSTFLIGHT] status=passed-with-warnings quality_gate=passed slides=10 warning_categories=1
+    [POSTFLIGHT][WARNING] quality_introduced_warnings=7
+    [PPTX] D:\Personal_Information\Quanova_Photonic_Defect_QML\presentation\quanova_interview_case_study_ppt169_20260911\exports\quanova_interview_case_study_20260912_000103.pptx
+    [REPORT] D:\Personal_Information\Quanova_Photonic_Defect_QML\presentation\quanova_interview_case_study_ppt169_20260911\validation\quanova_interview_case_study_20260912_000103.report.json
+=== 2026-09-11T17:01:05.185Z END run=b291b69c482d elapsed_ms=3371 output_lines=47 retained=5 omitted=42 ===

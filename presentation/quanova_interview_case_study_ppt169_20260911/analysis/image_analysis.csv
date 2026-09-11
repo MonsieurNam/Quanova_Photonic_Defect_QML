@@ -1,0 +1,13 @@
+No,Filename,Width,Height,AspectRatio,PixelAspectRatio,SourceDisplayRatio,RatioSource,Format,HasTransparentPixels,UsageCount,DisplayRatioVariants,AssetKind,SvgRenderable,PptxNativeSupported,SizeKB,Category
+1,compression_performance.png,1904,1024,1.86,1.86,,native,PNG,False,1,,bitmap,True,True,104.6,Wide landscape
+2,confusion_b1_q1.png,2112,849,2.49,2.49,,native,PNG,False,1,,bitmap,True,True,231.8,Ultra-wide
+3,finite_shot_sensitivity.png,1684,980,1.72,1.72,,native,PNG,False,1,,bitmap,True,True,65.2,Wide landscape
+4,learning_curve.png,1904,1024,1.86,1.86,,native,PNG,False,1,,bitmap,True,True,109.8,Wide landscape
+5,neu_cls_crazing.png,200,200,1.00,1.00,,native,PNG,False,1,,bitmap,True,True,29.4,Near square
+6,neu_cls_inclusion.png,200,200,1.00,1.00,,native,PNG,False,1,,bitmap,True,True,17.6,Near square
+7,neu_cls_patches.png,200,200,1.00,1.00,,native,PNG,False,1,,bitmap,True,True,29.5,Near square
+8,neu_cls_pitted_surface.png,200,200,1.00,1.00,,native,PNG,False,1,,bitmap,True,True,17.8,Near square
+9,neu_cls_rolled_in_scale.png,200,200,1.00,1.00,,native,PNG,False,1,,bitmap,True,True,24.0,Near square
+10,neu_cls_scratches.png,200,200,1.00,1.00,,native,PNG,False,1,,bitmap,True,True,16.7,Near square
+11,paired_quantum_differences.png,1906,1024,1.86,1.86,,native,PNG,False,1,,bitmap,True,True,93.8,Wide landscape
+12,runtime_breakdown.png,1901,1024,1.86,1.86,,native,PNG,False,1,,bitmap,True,True,75.5,Wide landscape
