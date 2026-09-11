@@ -1,0 +1,22 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+data/raw/*
+!data/raw/.gitkeep
+data/manifests/*.csv
+data/manifests/*.json
+data/splits/*.csv
+cache/*
+!cache/.gitkeep
+runs/*
+!runs/.gitkeep
+# Curated summary tables, figures, reports, and final deliverables are versioned.
+# Per-run artifacts remain local because they include serialized models and repeated predictions.
+*.joblib
+*.pt
+*.pth
+*.npz
+*.egg-info/

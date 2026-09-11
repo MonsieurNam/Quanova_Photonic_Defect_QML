@@ -1,0 +1,45 @@
+project:
+  seed: 42
+  dataset: NEU-CLS
+  raw_dir: data/raw/NEU-CLS
+  manifest: data/manifests/neu_cls.csv
+  splits_dir: data/splits
+  embeddings: cache/clip_vit_b32_openai.npz
+  runs_dir: runs
+  results_dir: results
+data:
+  classes: [Cr, In, Pa, PS, RS, Sc]
+  outer_folds: 5
+  outer_seed: 42
+  duplicate_hamming_threshold: 4
+  target_test_per_class: 60
+  budgets:
+    12: {train: 8, validation: 4}
+    24: {train: 16, validation: 8}
+    48: {train: 32, validation: 16}
+  subset_seeds: [11, 22, 33]
+encoder:
+  library: open_clip
+  model: ViT-B-32
+  checkpoint: openai
+  batch_size: 32
+quantum:
+  modes: 6
+  photons: 2
+  input_occupation: [1, 0, 1, 0, 0, 0]
+  encoded_modes: [0, 1, 2, 3, 4]
+  reference_mode: 5
+  map_seeds: [101, 202, 303]
+  feature_scales: [0.5, 1.0, 2.0]
+models:
+  logistic_c: [0.0001, 0.000432876, 0.00187382, 0.00811131, 0.0351119, 0.151991, 0.657933, 2.84804, 12.3285, 53.367, 231.013, 1000.0]
+  matched_c: [0.1, 1.0, 10.0, 100.0]
+  rbf_c: [0.1, 1.0, 10.0, 100.0]
+  rbf_scales: [0.25, 1.0, 4.0]
+  feature_width: 15
+shots:
+  launched: [500, 2000, 8000]
+  sampling_seeds: [1001, 1002, 1003, 1004, 1005]
+runtime:
+  max_pilot_hours: 6
+  timing_inputs: 64

@@ -1,0 +1,52 @@
+
+=== 2026-09-11T16:05:26.338Z NOTE id=b901b1715c01 ===
+Project initialized: profile=default; canvas=ppt169; path=D:\Personal_Information\Quanova_Photonic_Defect_QML\presentation\quanova_interview_case_study_ppt169_20260911
+
+=== 2026-09-11T16:05:38.637Z PYTHON run=de695de1320b ===
+cwd: C:\Users\monsi\.codex\skills\ppt-master
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\project_manager.py", "import-sources", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\reports\\pilot_report_vi.md", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\reports\\interview_qa_vi.md", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\docs\\research_review.md", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\docs\\experiment_protocol.md", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\results\\tables", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\results\\figures"]
+
+=== 2026-09-11T16:05:39.997Z PYTHON run=daecfbcb9df9 ===
+cwd: C:\Users\monsi\.codex
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\source_to_md\\pdf_to_md.py", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911\\sources\\compression_performance.pdf", "-o", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911\\sources\\compression_performance.md"]
+stdout:
+    [OK] Found table: P1 (lines)
+=== 2026-09-11T16:05:40.748Z END run=daecfbcb9df9 elapsed_ms=751 output_lines=7 retained=1 omitted=6 ===
+stdout:
+    [OK] Found table: P1 (lines)
+
+=== 2026-09-11T16:05:40.998Z PYTHON run=a1b0753312e3 ===
+cwd: C:\Users\monsi\.codex
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\source_to_md\\pdf_to_md.py", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911\\sources\\confusion_b1_q1.pdf", "-o", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911\\sources\\confusion_b1_q1.md"]
+stdout:
+    [OK] Found table: P1 (lines)
+=== 2026-09-11T16:05:41.284Z END run=a1b0753312e3 elapsed_ms=285 output_lines=10 retained=1 omitted=9 ===
+
+=== 2026-09-11T16:05:41.522Z PYTHON run=e5a736d0bb63 ===
+cwd: C:\Users\monsi\.codex
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\source_to_md\\pdf_to_md.py", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911\\sources\\finite_shot_sensitivity.pdf", "-o", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911\\sources\\finite_shot_sensitivity.md"]
+stdout:
+  [OK] Saved Markdown to: D:\Personal_Information\Quanova_Photonic_Defect_QML\presentation\quanova_interview_case_study_ppt169_20260911\sources\finite_shot_sensitivity.md
+=== 2026-09-11T16:05:41.727Z END run=e5a736d0bb63 elapsed_ms=205 output_lines=6 retained=1 omitted=5 ===
+
+=== 2026-09-11T16:05:41.982Z PYTHON run=a728cca711e5 ===
+cwd: C:\Users\monsi\.codex
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\source_to_md\\pdf_to_md.py", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911\\sources\\learning_curve.pdf", "-o", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911\\sources\\learning_curve.md"]
+stdout:
+  [OK] Saved Markdown to: D:\Personal_Information\Quanova_Photonic_Defect_QML\presentation\quanova_interview_case_study_ppt169_20260911\sources\learning_curve.md
+=== 2026-09-11T16:05:42.182Z END run=a728cca711e5 elapsed_ms=200 output_lines=6 retained=1 omitted=5 ===
+
+=== 2026-09-11T16:05:42.456Z PYTHON run=ad60eb5fbe61 ===
+cwd: C:\Users\monsi\.codex
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\source_to_md\\pdf_to_md.py", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911\\sources\\paired_quantum_differences.pdf", "-o", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911\\sources\\paired_quantum_differences.md"]
+stdout:
+    [OK] Found table: P1 (lines)
+=== 2026-09-11T16:05:42.646Z END run=ad60eb5fbe61 elapsed_ms=189 output_lines=7 retained=1 omitted=6 ===
+
+=== 2026-09-11T16:05:42.915Z PYTHON run=34a97f132954 ===
+cwd: C:\Users\monsi\.codex
+argv: ["C:\\Python313\\python.exe", "C:\\Users\\monsi\\.codex\\skills\\ppt-master\\scripts\\source_to_md\\pdf_to_md.py", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911\\sources\\runtime_breakdown.pdf", "-o", "D:\\Personal_Information\\Quanova_Photonic_Defect_QML\\presentation\\quanova_interview_case_study_ppt169_20260911\\sources\\runtime_breakdown.md"]
+stdout:
+    [OK] Found table: P1 (lines)
+=== 2026-09-11T16:05:43.155Z END run=34a97f132954 elapsed_ms=239 output_lines=7 retained=1 omitted=6 ===
+=== 2026-09-11T16:05:43.215Z END run=de695de1320b elapsed_ms=4577 output_lines=128 retained=1 omitted=127 ===

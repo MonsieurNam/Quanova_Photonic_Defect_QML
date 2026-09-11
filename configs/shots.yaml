@@ -1,0 +1,6 @@
+extends: base.yaml
+profile: shots
+folds: [0]
+subset_seeds: [11]
+budgets: [24]
+families: [Q1]

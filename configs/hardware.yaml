@@ -1,0 +1,5 @@
+extends: base.yaml
+profile: hardware
+backend: remote
+status: planned
+requires: [provider_access, quota, frozen_circuit]

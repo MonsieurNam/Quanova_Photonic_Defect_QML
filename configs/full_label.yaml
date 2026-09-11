@@ -1,0 +1,6 @@
+extends: base.yaml
+profile: full_label
+folds: [0]
+subset_seeds: [42]
+budgets: [full]
+families: [B1, B2]

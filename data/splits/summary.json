@@ -1,0 +1,5 @@
+{
+  "n_split_files": 50,
+  "outer_folds": 5,
+  "seed": 42
+}

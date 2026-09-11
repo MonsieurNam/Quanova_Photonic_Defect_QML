@@ -1,0 +1,73 @@
+stage,family,seconds
+CLIP embedding,all,96.57280879999962
+quantum timing sample,Q1,0.050800499999240856
+candidate fit + validation,B1,0.1064072999979538
+candidate fit + validation,B4,0.0711993000004434
+candidate fit + validation,B5,0.6494465000014294
+candidate fit + validation,B6,1.2241166000039794
+candidate fit + validation,B2,0.3733263999965853
+candidate fit + validation,B3,0.20596459999978772
+candidate fit + validation,B3,0.1314753000024206
+candidate fit + validation,Q1,1.6392895000062697
+candidate fit + validation,B4,0.0675077999967463
+candidate fit + validation,B6,1.188519399998766
+candidate fit + validation,B5,0.4414612999953515
+candidate fit + validation,B2,0.07271930000206281
+candidate fit + validation,B4,0.054365399999368805
+candidate fit + validation,B3,0.21451030000207488
+candidate fit + validation,B6,1.3352871000042783
+candidate fit + validation,B5,0.5018971000026782
+candidate fit + validation,B2,0.0317648999989609
+candidate fit + validation,B5,0.43358460001036125
+candidate fit + validation,B3,0.0729111000000551
+candidate fit + validation,B1,0.37062839999634856
+candidate fit + validation,B6,0.9648605999973353
+candidate fit + validation,B5,0.45701399999961545
+candidate fit + validation,B2,0.0782105000016593
+candidate fit + validation,B3,0.336264900000969
+candidate fit + validation,B4,0.1413552999983942
+candidate fit + validation,B2,0.162488899999516
+candidate fit + validation,Q1,4.531932899997626
+candidate fit + validation,Q1,1.4626340999984662
+candidate fit + validation,B3,0.2960387000002806
+candidate fit + validation,B4,0.11029239999697821
+candidate fit + validation,B4,0.07828049999989091
+candidate fit + validation,B5,0.42700660000263985
+candidate fit + validation,B6,0.9957669000032164
+candidate fit + validation,Q1,2.6235630000010115
+candidate fit + validation,B6,1.4277519999995987
+candidate fit + validation,B2,0.391611299999567
+candidate fit + validation,B2,0.1590033000029502
+candidate fit + validation,B5,0.4431765999943289
+candidate fit + validation,B1,0.2660118999974651
+candidate fit + validation,B6,1.5958415000059158
+candidate fit + validation,B1,0.44804750000366717
+candidate fit + validation,B4,0.0260149999976412
+candidate fit + validation,B3,0.19741600000088444
+candidate fit + validation,Q1,2.5527724999956245
+candidate fit + validation,Q1,4.40461320000213
+candidate fit + validation,B1,0.742918400004782
+candidate fit + validation,B6,0.7399134000097531
+candidate fit + validation,Q1,1.4860008999985426
+candidate fit + validation,B2,0.136102799999207
+candidate fit + validation,Q1,4.630452299999886
+candidate fit + validation,B6,1.5368439000048948
+candidate fit + validation,B4,0.0935688999961706
+candidate fit + validation,B3,0.2262969999992487
+candidate fit + validation,B5,0.4343106999949649
+candidate fit + validation,B1,0.27071610000348223
+candidate fit + validation,B5,0.4963707000078992
+candidate fit + validation,B4,0.11650430000190631
+candidate fit + validation,B3,0.2812939999985241
+candidate fit + validation,B1,0.4834392000047949
+candidate fit + validation,Q1,2.678881499996349
+candidate fit + validation,B2,0.34808780000093925
+candidate fit + validation,B1,0.351027800003066
+candidate fit + validation,B1,0.2688452000002137
+test inference,B1,0.18251750000126776
+test inference,B2,0.6541161000022839
+test inference,B3,0.14604309999776888
+test inference,B4,0.2687130000012985
+test inference,B5,0.5488345999965532
+test inference,B6,0.5679767000056017
+test inference,Q1,8.368338599999333

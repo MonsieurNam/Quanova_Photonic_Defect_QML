@@ -1,0 +1,3 @@
+run_id,profile,family,fold,subset_seed,budget,map_seed,sampling_seed,launched_shots,macro_f1,balanced_accuracy,accuracy,acceptance,failures,test_inference_seconds
+full_label_1dd1449a4abc,full_label,B1,0,42,full,,,,0.9972220293075909,0.9972222222222222,0.9972222222222222,,0,0.023761099999319413
+full_label_533dd4370e0a,full_label,B2,0,42,full,,,,0.9833091787439613,0.9833333333333334,0.9833333333333333,,0,0.5087301000003208

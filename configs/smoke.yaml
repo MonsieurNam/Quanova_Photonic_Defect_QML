@@ -1,0 +1,6 @@
+extends: base.yaml
+profile: smoke
+folds: [0]
+subset_seeds: [11]
+budgets: [12]
+families: [B1, B3, B5, B6, Q1]

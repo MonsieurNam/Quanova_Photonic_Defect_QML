@@ -1,0 +1,11 @@
+{
+  "timing_source": "64 or fewer train/validation inputs only",
+  "timed_inputs": 64,
+  "seconds": 0.050800499999240856,
+  "seconds_per_circuit_input": 0.0007937578124881384,
+  "projected_r1_unique_map_inputs": 42768,
+  "projected_r1_quantum_feature_hours": 0.009429842812359084,
+  "threshold_hours": 6,
+  "recommended_profile": "pilot",
+  "caveat": "Projection covers quantum feature generation, not CLIP extraction or classifier fitting."
+}

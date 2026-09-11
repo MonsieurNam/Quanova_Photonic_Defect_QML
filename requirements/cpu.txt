@@ -1,0 +1,1 @@
+-e .[clip,photonic,dev]

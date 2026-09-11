@@ -1,0 +1,10 @@
+{
+  "split_files": 50,
+  "probability_sum": 0.9999999999999993,
+  "acceptance": 0.7304086755174237,
+  "conditional_sum": 1.0,
+  "outcomes_total": 21,
+  "outcomes_collision_free": 15,
+  "perceval_max_abs_error": 4.163336342344337e-17,
+  "merlin_max_abs_error": 8.326672684688674e-17
+}

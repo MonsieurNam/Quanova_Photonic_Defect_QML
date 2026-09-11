@@ -1,0 +1,12 @@
+metric,value
+images_total,1800
+valid,1800
+quarantined,0
+exact_duplicate_groups,1
+conflicting_duplicate_groups,0
+class_Cr,300
+class_In,300
+class_Pa,300
+class_PS,300
+class_RS,300
+class_Sc,300

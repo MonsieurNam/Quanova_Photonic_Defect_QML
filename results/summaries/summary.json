@@ -1,0 +1,18 @@
+{
+  "evaluations": 164,
+  "r1_evaluations": 117,
+  "r2_evaluations": 2,
+  "r3_evaluations": 45,
+  "families": [
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "Q1",
+    "Q1-sampled"
+  ],
+  "tables": 11,
+  "figures": 6
+}

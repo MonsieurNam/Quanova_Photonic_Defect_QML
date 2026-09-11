@@ -1,0 +1,6 @@
+extends: base.yaml
+profile: pilot
+folds: [0]
+subset_seeds: [11, 22, 33]
+budgets: [12, 24, 48]
+families: [B1, B2, B3, B4, B5, B6, Q1]
