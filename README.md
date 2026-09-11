@@ -13,6 +13,8 @@ small label budgets. It is not designed to claim quantum advantage.
   aggregation, and Perceval cross-checking are implemented.
 - R1, R2, and R3 are complete: 1,428 classifier fits and 164 test evaluations in total.
 - The measured Vietnamese report, interview Q&A, English slide deck, PDF, and speaker notes are complete.
+- The ten-slide interview story now answers the application choice, why it fits Quandela, and how a
+  gated twelve-week study would reach a go-or-stop decision; the completed pilot is supporting evidence.
 
 ## Interview deliverables
 
@@ -22,7 +24,9 @@ small label budgets. It is not designed to claim quantum advantage.
 - [Vietnamese interview Q&A](reports/interview_qa_vi.md)
 - [English speaker notes](presentation/quanova_interview_case_study_ppt169_20260911/notes/total.md)
 
-The deck contains ten native DrawingML slides with embedded speaker notes. Its final package
+The deck contains ten native DrawingML slides with embedded speaker notes. It distinguishes the
+completed simulator pilot from the proposed remote-QPU gate, states the continue and stop criteria,
+and preserves the measured result without claiming practical or quantum advantage. Its final package
 postflight passed, and all slides were rendered through Microsoft PowerPoint for visual inspection.
 
 ## Reproduce

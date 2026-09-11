@@ -7,15 +7,15 @@
 
 ## communication
 - primary_language: en-US
-- audience: Quanova technical interview panel evaluating machine-learning rigor, quantum–photonic relevance, and experimental judgment
-- objective: Explain the completed pilot and its limits so the panel can assess the contribution and judge whether the focused next-stage experiment is worthwhile.
-- core_message: The fixed photonic reservoir is executable and reproducible, but Q1 currently loses to strong baselines; continue only through a targeted falsifiable plan.
+- audience: Quandela technical interview panel evaluating application choice, photonic-platform fit, execution discipline, and scientific judgment
+- objective: Answer which application to choose, why it fits Quandela, and how to test feasibility within 2–3 months, using the completed pilot as de-risking evidence.
+- core_message: Choose few-label industrial defect inspection with a fixed photonic reservoir; the pilot proves technical feasibility and useful signal but not practical advantage, so continue only through a falsifiable multi-fold, noise-aware, simulator-to-hardware plan.
 - consumption_mode: balanced
 
 ## mode
 - mode: custom
 - mode_references: briefing, pyramid
-- mode_behavior: Use briefing to present complete scannable experimental facts and pyramid assertion titles to state the judgment each evidence page supports; move from hypothesis and controls through observations to a conditional decision.
+- mode_behavior: Use briefing to answer choice, rationale, platform fit, and 12-week approach before showing pilot evidence; use pyramid assertion titles to move from evidence to a conditional decision.
 
 ## visual_style
 - visual_style: swiss-minimal
@@ -36,6 +36,8 @@
 - body: 23
 - title: 40
 - subtitle: 32
+- card_title: 28
+- compact_display: 26
 - annotation: 18
 
 ## icons
@@ -51,7 +53,6 @@
 - neu-scratches: images/neu_cls_scratches.png | source=user | pattern=Equal-height six-sample strip with label below | crop=no-crop
 - learning-curve: images/learning_curve.png | source=user | pattern=Dominant full-width evidence field with conclusion callout beside the plot | crop=no-crop
 - compression-performance: images/compression_performance.png | source=user | pattern=Large plot paired with a narrow interpretation column | crop=no-crop
-- paired-differences: images/paired_quantum_differences.png | source=user | pattern=Full-width evidence panel crossing a neutral zero reference | crop=no-crop
 - shot-sensitivity: images/finite_shot_sensitivity.png | source=user | pattern=Plot on the left with acceptance/failure callouts on the right | crop=no-crop
 - runtime-breakdown: images/runtime_breakdown.png | source=user | pattern=Compact plot nested inside a broader limitations-and-readiness page | crop=no-crop
 

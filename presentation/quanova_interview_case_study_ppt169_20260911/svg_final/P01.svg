@@ -1,31 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-page-role="cover">
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-page-role="content">
   <rect id="page-bg" data-pptx-role="background" x="0" y="0" width="1280" height="720" fill="#FBF7EE" />
-  <rect id="top-rule" data-pptx-role="decoration" x="0" y="0" width="1280" height="10" fill="#2D7A78" />
-  <g id="cover-title" data-pptx-bounds="72 48 1136 287">
-    <text x="72" y="75" font-family="Arial" font-size="18" font-weight="700" letter-spacing="1.5" fill="#2D7A78">QUANOVA · INTERVIEW CASE STUDY</text>
-    <text font-size="42" font-weight="700" fill="#1C2D38" font-family="Georgia" x="72" y="154">
-      <tspan>A reproducible photonic pilot</tspan>
-      </text><text font-size="42" font-weight="700" fill="#1C2D38" font-family="Georgia" x="72" y="206"><tspan>delivers a useful negative result</tspan>
-    </text><text font-size="23" fill="#222222" font-family="Arial" x="72" y="294">
-      <tspan>Few-label steel defect classification · ideal photonic simulation</tspan>
-      </text><text font-size="23" fill="#222222" font-family="Arial" x="72" y="326"><tspan>One outer-fold pilot · frozen protocol · measured on 11 Sep 2026</tspan>
-    </text></g>
-  <g id="metric-contrast" data-pptx-bounds="72 388 1136 186">
-    <line x1="72" y1="388" x2="1208" y2="388" stroke="#1C2D38" stroke-width="2" />
-    <text x="72" y="433" font-family="Arial" font-size="18" font-weight="700" letter-spacing="1" fill="#D84924">PHOTONIC Q1</text>
-    <text x="72" y="518" font-family="Consolas" font-size="74" font-weight="700" fill="#D84924">0.8708</text>
-    <text x="72" y="553" font-family="Arial" font-size="18" fill="#222222">macro-F1 · 48 labels per class</text>
-    <line x1="530" y1="414" x2="530" y2="574" stroke="#C9BDA8" stroke-width="2" />
-    <text x="570" y="433" font-family="Arial" font-size="18" font-weight="700" letter-spacing="1" fill="#2D7A78">FULL CLIP + LINEAR</text>
-    <text x="570" y="518" font-family="Consolas" font-size="74" font-weight="700" fill="#2D7A78">0.9852</text>
-    <text x="570" y="553" font-family="Arial" font-size="18" fill="#222222">macro-F1 · same test fold</text>
-    <rect x="1008" y="421" width="200" height="132" fill="#EFE6D5" />
-    <text x="1108" y="463" text-anchor="middle" font-family="Arial" font-size="18" font-weight="700" fill="#D84924">Q1 − B1</text>
-    <text x="1108" y="518" text-anchor="middle" font-family="Consolas" font-size="38" font-weight="700" fill="#D84924">−0.1143</text>
+  <rect id="top-rule" data-pptx-role="decoration" x="0" y="0" width="1280" height="8" fill="#2D7A78" />
+  <g id="cover-title" data-pptx-bounds="64 40 1152 232">
+    <text x="64" y="68" font-family="Arial" font-size="18" font-weight="700" letter-spacing="1.4" fill="#2D7A78">QUANDELA · APPLICATION CASE STUDY</text>
+    <text fill="#1C2D38" font-size="42" font-weight="700" font-family="Georgia" x="64" y="126">I would investigate few-label industrial</text><text fill="#1C2D38" font-size="42" font-weight="700" font-family="Georgia" x="64" y="180">defect inspection with a photonic reservoir</text><text x="64" y="226" font-family="Arial" font-size="23" fill="#222222">A measurable 12-week path from public data to a conditional hardware test</text>
   </g>
-  <g id="cover-conclusion" data-pptx-bounds="72 606 1136 52">
-    <rect x="72" y="606" width="1136" height="52" fill="#1C2D38" />
-    <text x="96" y="639" font-family="Arial" font-size="22" font-weight="700" fill="#FBF7EE">Q1 beats locked RFF — but not ELM, RBF-SVM, or the full embedding.</text>
-  </g>
-  <g id="page-index" data-pptx-bounds="1120 668 88 28"><text x="1208" y="690" text-anchor="end" font-family="Arial" font-size="18" fill="#766E62">01 / 10</text></g>
+  <g id="rationale-cards" data-pptx-bounds="64 286 1152 178">
+    <rect x="64" y="286" width="360" height="178" fill="#EFE6D5" />
+    <text x="88" y="321" font-family="Arial" font-size="18" font-weight="700" fill="#D84924">REAL INDUSTRIAL NEED</text>
+    <text x="88" y="359" font-family="Georgia" font-size="30" font-weight="700" fill="#1C2D38">Scarce expert labels</text>
+    <text fill="#222222" font-size="20" font-family="Arial" x="88" y="396">Quality inspection needs useful</text><text fill="#222222" font-size="20" font-family="Arial" x="88" y="424">accuracy from small labelled sets.</text><rect x="448" y="286" width="360" height="178" fill="#1C2D38" />
+    <text x="472" y="321" font-family="Arial" font-size="18" font-weight="700" fill="#B9D0C7">PHOTONIC FIT</text>
+    <text x="472" y="359" font-family="Georgia" font-size="30" font-weight="700" fill="#FBF7EE">Fixed nonlinear map</text>
+    <text fill="#FBF7EE" font-size="20" font-family="Arial" x="472" y="396">Interference transforms compact</text><text fill="#FBF7EE" font-size="20" font-family="Arial" x="472" y="424">phase-encoded image features.</text><rect x="832" y="286" width="384" height="178" fill="#EFE6D5" />
+    <text x="856" y="321" font-family="Arial" font-size="18" font-weight="700" fill="#D84924">12-WEEK TEST</text>
+    <text x="856" y="359" font-family="Georgia" font-size="30" font-weight="700" fill="#1C2D38">Decision-ready result</text>
+    <text fill="#222222" font-size="20" font-family="Arial" x="856" y="396">Public data · matched controls</text><text fill="#222222" font-size="20" font-family="Arial" x="856" y="424">simulator → conditional QPU run</text></g>
+  <g id="pilot-proof" data-pptx-bounds="64 500 1152 142">
+    <rect x="64" y="500" width="1152" height="142" fill="#2D7A78" />
+    <text x="88" y="535" font-family="Arial" font-size="18" font-weight="700" fill="#FBF7EE">COMPLETED DE-RISKING PILOT</text>
+    <text x="88" y="596" font-family="Consolas" font-size="48" font-weight="700" fill="#FFFFFF">Q1  0.8708</text>
+    <text x="362" y="587" font-family="Arial" font-size="20" fill="#FBF7EE">macro-F1 · 48 labels per class</text>
+    <line x1="690" y1="522" x2="690" y2="620" stroke="#B9D0C7" stroke-width="2" />
+    <text x="722" y="550" font-family="Georgia" font-size="24" font-weight="700" fill="#FFFFFF">Useful signal; no advantage yet</text>
+    <text fill="#FBF7EE" font-size="18" font-family="Arial" x="722" y="588">Evidence informs the next test; it does not support</text><text fill="#FBF7EE" font-size="18" font-family="Arial" x="722" y="613">a quantum-advantage claim.</text></g>
+  <g id="page-index" data-pptx-bounds="1124 667 92 30"><text x="1216" y="690" text-anchor="end" font-family="Arial" font-size="18" fill="#766E62">01 / 10</text></g>
 </svg>

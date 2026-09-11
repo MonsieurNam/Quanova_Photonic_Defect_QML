@@ -1,22 +1,22 @@
 <!-- ppt-master-schema: design-spec/v1 -->
-# Quanova Photonic Defect QML Interview Case Study - Design Spec
+# Quandela Photonic Defect QML Interview Case Study - Design Spec
 
 ## I. Project Information
 
 | Item | Value |
 | --- | --- |
-| Project Name | Quanova Photonic Defect QML Interview Case Study |
+| Project Name | Quandela Photonic Defect QML Interview Case Study |
 | Canvas Format | PPT 16:9 (1280 × 720) |
 | Page Count | 10 |
 | Primary Language | en-US |
-| Target Audience | Quanova technical interview panel familiar with machine learning and evaluating experimental judgment, quantum–photonic relevance, and engineering rigor. |
-| Communication Intent | Explain the proposed hybrid photonic machine-learning pipeline, report the completed pilot honestly, and gain agreement on a focused next-stage feasibility plan. |
-| Desired Audience Outcome | The panel can assess the candidate's contribution, understand what the evidence supports, and judge whether the proposed next experiment is technically worthwhile. |
-| Core Message / Ask / Action | A fixed photonic reservoir is executable and reproducible, but the current Q1 system loses to strong classical baselines; further work should proceed only through a targeted, falsifiable improvement plan. |
+| Target Audience | Quandela technical interview panel evaluating application choice, photonic-platform fit, execution discipline, and scientific judgment. |
+| Communication Intent | Answer which application to choose, why it is promising for Quandela, and how to test feasibility within 2–3 months, using the completed pilot as de-risking evidence. |
+| Desired Audience Outcome | The panel can see a concrete application choice, understand the platform rationale and 12-week workplan, and judge the proposal against explicit continue/stop criteria. |
+| Core Message / Ask / Action | Choose few-label industrial defect inspection with a fixed photonic reservoir; the pilot proves technical feasibility and useful signal but not practical advantage, so continue only through a falsifiable multi-fold, noise-aware, simulator-to-hardware plan. |
 | Delivery Context | Primarily a presenter-led 12–15 minute technical interview talk; secondarily a concise reader-led review copy for follow-up. |
 | Artifact Afterlife | Technical handoff and audit trail linking claims to the repository, measured results, and next-stage protocol. |
 | Reading Mode | balanced |
-| Content Strategy | Balanced: reorganize and distill the source into a decision-oriented experimental audit while preserving all claims, figures, caveats, and provenance. |
+| Content Strategy | Answer-first: application choice → industrial and platform rationale → falsifiable 12-week approach → measured pilot evidence → conditional recommendation. Preserve all claims, caveats, and provenance. |
 | Design Style | Swiss-minimal geometry with a warm lab-notebook palette; custom briefing/pyramid mode that makes every experimental fact scannable and every evidence page conclude with a judgment. |
 | AI Image Acquisition Path | not applicable |
 | Generation Mode | continuous |
@@ -80,6 +80,8 @@
 | Body | 23 |
 | Title | 40 |
 | Subtitle | 32 |
+| Card title | 28 |
+| Compact display | 26 |
 | Annotation | 18 |
 
 ## V. Layout Principles
@@ -117,115 +119,112 @@
 | neu_cls_scratches.png | 200 × 200 | 1.00 | Orient the audience to the scratches class | Dataset sample | Equal-height six-sample strip with label below | no-crop | user | Existing | NEU-CLS `Sc_1.bmp`, converted losslessly to PNG | none | local |
 | learning_curve.png | 1904 × 1024 | 1.86 | Show all families across the three label budgets | Result chart | Dominant full-width evidence field with conclusion callout beside the plot | no-crop | user | Existing | `results/figures/learning_curve.png`; preserve axes, legend, and uncertainty marks | none | local |
 | compression_performance.png | 1904 × 1024 | 1.86 | Isolate the penalty from PCA-5 compression and the remaining feature-map gap | Result chart | Large plot paired with a narrow interpretation column | no-crop | user | Existing | `results/figures/compression_performance.png`; preserve all labels | none | local |
-| paired_quantum_differences.png | 1906 × 1024 | 1.86 | Compare paired Q1 differences against RFF, ELM, and PCA-5 RBF | Result chart | Full-width evidence panel crossing a neutral zero reference | no-crop | user | Existing | `results/figures/paired_quantum_differences.png`; preserve zero line and labels | none | local |
-| finite_shot_sensitivity.png | 1684 × 982 | 1.71 | Show finite-shot sensitivity and non-monotonic performance | Result chart | Plot on the left with acceptance/failure callouts on the right | no-crop | user | Existing | `results/figures/finite_shot_sensitivity.png`; preserve error bars and shot labels | none | local |
+| finite_shot_sensitivity.png | 1684 × 980 | 1.72 | Show finite-shot sensitivity and non-monotonic performance | Result chart | Plot on the left with acceptance/failure callouts on the right | no-crop | user | Existing | `results/figures/finite_shot_sensitivity.png`; preserve error bars and shot labels | none | local |
 | runtime_breakdown.png | 1901 × 1024 | 1.86 | Ground the feasibility claim in measured CPU runtime | Result chart | Compact plot nested inside a broader limitations-and-readiness page | no-crop | user | Existing | `results/figures/runtime_breakdown.png`; local CPU profiling only | none | local |
 
 ## IX. Content Outline
 
-### Part 1: Hypothesis and controls
+### Part 1: Choice, rationale, and platform fit
 
-#### Slide 01 - A reproducible photonic pilot delivers a useful negative result
+#### Slide 01 - I would investigate few-label industrial defect inspection with a photonic reservoir
 
-- **Audience move**: From expecting a quantum-performance pitch → understanding that the case study demonstrates experimental judgment through a measured negative result.
-- **Layout**: Anchor cover with a large `0.8708` Q1 macro-F1 facing `0.9852` for full CLIP + linear regression at 48 labels/class; the title occupies the opposite grid zone, with a small oxide-red delta marker and a restrained subtitle.
-- **Title**: A reproducible photonic pilot delivers a useful negative result
-- **Core message**: The fixed photonic reservoir runs correctly, yet the current application evidence does not support quantum advantage.
-- **Content**: Subtitle: “Few-label steel defect classification · ideal photonic simulation · fold-0 pilot.” Supporting line: “Q1 beats locked RFF, but loses to ELM, RBF-SVM, and full embeddings.” Footer: “Quanova interview case study · 11 Sep 2026.”
-- **Visualization**: Native numeric contrast: Q1 `0.8708` vs B1 `0.9852`; the 48-label/class cell is the binding cover hook.
+- **Audience move**: From an open application prompt → receiving the application choice and thesis immediately.
+- **Layout**: Answer-first cover with the application statement, three rationale cards, and the measured Q1 result as a secondary proof point.
+- **Title**: I would investigate few-label industrial defect inspection with a photonic reservoir
+- **Core message**: The application addresses costly labels, fits a small fixed photonic feature map, and can be tested rigorously in 12 weeks.
+- **Content**: “Real industrial need: scarce expert labels.” “Photonic fit: interference as a fixed nonlinear map.” “12-week test: public data, matched controls, simulator-to-hardware path.” Secondary evidence: “Completed pilot: Q1 0.8708 macro-F1 at 48 labels/class.”
+- **Visualization**: Three compact rationale cards feeding a restrained pilot-evidence band.
 
-#### Slide 02 - The benchmark starts with 1,800 audited images and a leakage barrier
+#### Slide 02 - Why this is a good 12-week feasibility study
 
-- **Audience move**: From seeing an abstract QML task → seeing the concrete dataset, label scarcity, and duplicate-aware split discipline.
-- **Layout**: Six NEU-CLS samples form a clean horizontal strip; below, one wide factual band holds dataset counts and one compact leakage-control diagram.
-- **Title**: The benchmark starts with 1,800 audited images and a leakage barrier
-- **Core message**: The comparison uses balanced data and group-safe splits, so duplicate leakage cannot create a false win.
-- **Content**: “6 classes · 300 images/class · 1,800/1,800 valid · 0 quarantined.” “One exact duplicate pair: Pa_101 / Pa_105, same label, one group.” “Five StratifiedGroupKFold outer folds, seed 42; pilot uses fold 0 with 60 test images/class.” Source line: `results/tables/dataset_audit.csv`; `docs/experiment_protocol.md`.
-- **Images**: Use all six `neu_cls_*.png` samples in class order: crazing, inclusion, patches, pitted surface, rolled-in scale, scratches. Keep every image fully visible.
-- **Visualization**: Qualitative flow: image IDs + duplicate groups → stratified group split → disjoint train / validation / test.
+- **Audience move**: From hearing the choice → understanding the operational need and why the question is measurable.
+- **Layout**: Six NEU-CLS samples across the top; three criteria below: real need, tractable benchmark, leakage-safe evidence.
+- **Title**: Why this is a good 12-week feasibility study
+- **Core message**: Industrial label scarcity is concrete, the public benchmark is measurable, and duplicate-safe evaluation limits false wins.
+- **Content**: “1,800 audited images · six balanced defect classes.” “Expert labels are expensive; the target is useful accuracy from 12 / 24 / 48 labels per class.” “One exact duplicate pair is held in one group; fold 0 has 60 test images per class.” Conclusion: “Real need · accessible data · quantitative decision.”
+- **Images**: Use all six neu_cls sample images in class order, fully visible.
+- **Visualization**: Sample strip plus three evidence cards.
 
-#### Slide 03 - The circuit is fixed; only the phase encoding changes per image
+#### Slide 03 - A small photonic reservoir fits Quandela’s simulator-to-hardware path
 
-- **Audience move**: From knowing the data controls → understanding exactly what is quantum-inspired, what is trained, and what is verified.
-- **Layout**: One left-to-right pipeline is the page spine: frozen OpenCLIP → train-only scale/PCA-5 → five phases → `U D(x) U` six-mode, two-photon circuit → 15 postselected collision-free probabilities → linear readout. A compact verification seal sits under the circuit.
-- **Title**: The circuit is fixed; only the phase encoding changes per image
-- **Core message**: Q1 is a transparent fixed feature map whose probability semantics match two independent photonic libraries at machine precision.
-- **Content**: “Input occupation [1,0,1,0,0,0] · encoded modes 0–4 · mode 5 reference · map seeds 101/202/303.” “21 two-photon Fock outcomes → 15 collision-free conditional features; acceptance retained separately.” “Max error vs Perceval 1.2.4: 4.16 × 10⁻¹⁷; vs MerLin 0.4.1: 8.33 × 10⁻¹⁷.” Source: `docs/experiment_protocol.md`; `results/summaries/verification.json`.
-- **Mathematical content**: U(x)=U D(x) U,\quad \phi_Q(x)=\operatorname{Normalize}\left(\{P(\mathbf{n}\mid x)\}_{\mathbf{n}\in\mathcal{C}}\right)
-- **Visualization**: Qualitative linked process with the same sample token traveling through each transformation; validation callout branches from the probability vector.
+- **Audience move**: From application rationale → understanding what runs on the photonic platform and why the architecture is near-term.
+- **Layout**: Left-to-right hybrid pipeline with a simulator-to-hardware lane below it.
+- **Title**: A small photonic reservoir fits Quandela’s simulator-to-hardware path
+- **Core message**: A frozen encoder and compact phase-encoded circuit isolate the photonic feature map and permit staged validation from Perceval to remote hardware.
+- **Content**: Frozen OpenCLIP → train-only PCA-5 → phases [−π, π] → six modes / two photons → 15 conditional probabilities → linear readout. “Perceval: Quandela simulation layer, completed.” “Independent MerLin check: completed.” “Remote QPU subset: proposed, not yet executed.” Preserve exact numerical verification errors.
+- **Mathematical content**: U(x)=U D(x) U; phi_Q(x)=Normalize({P(n|x)}).
+- **Visualization**: Main pipeline plus three-stage validation rail: Perceval → independent check → remote QPU.
 
-#### Slide 04 - The protocol makes overclaiming difficult
+#### Slide 04 - The feasibility question is deliberately falsifiable
 
-- **Audience move**: From understanding the map → trusting that the benchmark compares like with like and freezes model selection before test inspection.
-- **Layout**: Dense but scannable audit page: a vertical protocol spine at left, a baseline family ladder in the center, and a large `1,404 fits / 117 evaluations` ledger at right.
-- **Title**: The protocol makes overclaiming difficult
-- **Core message**: Frozen budgets, paired subsets, train-only preprocessing, and strong baselines create a hard test for utility.
-- **Content**: “Budgets per class: 12 / 24 / 48 total labels, split 8/4, 16/8, 32/16 train/validation.” “Subset seeds 11/22/33; map seeds 101/202/303 are averaged, never selected or ensembled.” Baselines: B1 full CLIP + LR; B2 full CLIP + RBF; B3 PCA-5 + LR; B4 PCA-5 + RBF; B5 RFF-15; B6 ELM-15; Q1 photonic-15. “Validation selects hyperparameters; selected train-fitted model is evaluated once without refit.” Source: `docs/experiment_protocol.md`.
-- **Visualization**: Qualitative audit trail; nested budget tokens align across all seven families and terminate at a locked test gate.
+- **Audience move**: From understanding the architecture → seeing exactly what would count as evidence for or against utility.
+- **Layout**: Central question, matched baseline ladder, compact protocol ledger, and explicit continue/stop gates.
+- **Title**: The feasibility question is deliberately falsifiable
+- **Core message**: At matched compressed dimensions, Q1 must beat RFF and close the ELM/RBF gap, or demonstrate a practical resource trade-off.
+- **Content**: Label budgets 12 / 24 / 48; subset seeds 11 / 22 / 33; B1–B6 and Q1; validation-only selection; map seeds averaged, never picked. “Continue: close ELM/RBF gap across outer folds or show resource value.” “Stop: only beat RFF while strong controls remain better.”
+- **Visualization**: Question → matched controls → locked test → two decision gates.
 
-### Part 2: Observations and interpretation
+#### Slide 05 - A 12-week plan moves from simulation to a decision
 
-#### Slide 05 - Q1 improves with labels, but the full embedding stays dominant
+- **Audience move**: From knowing the test → seeing a deliverable-driven project plan that fits the assignment.
+- **Layout**: Six-stage horizontal timeline with a deliverable and exit criterion under every stage.
+- **Title**: A 12-week plan moves from simulation to a decision
+- **Core message**: Each two-week block removes one uncertainty and can stop the project before unnecessary hardware work.
+- **Content**: Weeks 1–2 data, protocol, baselines; 3–4 Perceval and independent checks; 5–6 five-fold paired benchmark; 7–8 finite-shot and realistic noise; 9–10 remote hardware subset with raw counts/calibration; 11–12 harder-data replication, report, go/stop decision.
+- **Visualization**: Six milestones progressing from definition to decision, with hardware work explicitly conditional.
 
-- **Audience move**: From trusting the protocol → seeing the primary outcome across all model families and label budgets.
-- **Layout**: `learning_curve.png` dominates the page; a narrow conclusion column highlights the 48-label endpoint and the B1–Q1 gap.
-- **Title**: Q1 improves with labels, but the full embedding stays dominant
-- **Core message**: At 48 labels/class, Q1 reaches 0.8708 macro-F1 while B1 reaches 0.9852.
-- **Content**: Pull figures: “Q1 0.7812 → 0.7886 → 0.8708.” “B1 0.9242 → 0.9638 → 0.9852.” Interpretation: “The photonic map learns useful structure, but not enough to justify discarding the full 512-D embedding.” Source: `results/tables/main_results.csv`; means ± sample SD across three subset seeds.
-- **Images**: `learning_curve.png`, fully visible and uncropped.
-- **Visualization**: `learning-curve=yes` as a pre-rendered evidence image; Native-ready: learning-curve=no.
+### Part 2: Pilot evidence and diagnosis
 
-#### Slide 06 - PCA-5 compression explains much of the distance to the best baseline
+#### Slide 06 - The pilot proves useful signal, not competitive advantage
 
-- **Audience move**: From seeing Q1 trail B1 → separating the loss caused by compression from the loss caused by the photonic map.
-- **Layout**: `compression_performance.png` uses the left two-thirds; the right third decomposes B1→B3 and B2→B4 gaps, then positions Q1 against other PCA-5 models.
-- **Title**: PCA-5 compression explains much of the distance to the best baseline
-- **Core message**: The bottleneck removes important signal before any nonlinear map is applied.
-- **Content**: “B1−B3: +0.1018 / +0.0993 / +0.0713 at 12 / 24 / 48 labels.” “B2−B4: +0.0657 / +0.0872 / +0.0263.” “At 24 labels/class: B3 0.8646, B4 0.8444, B6 0.8318, Q1 0.7886.” Source: `results/tables/compression.csv`; `results/tables/main_results.csv`.
-- **Images**: `compression_performance.png`, fully visible and uncropped.
-- **Visualization**: `compression-comparison=yes` as a pre-rendered evidence image; Native-ready: compression-comparison=no.
+- **Audience move**: From the proposed plan → seeing that an initial de-risking pilot has already been executed.
+- **Layout**: learning_curve.png dominates the page with a narrow conclusion column.
+- **Title**: The pilot proves useful signal, not competitive advantage
+- **Core message**: Q1 improves from 0.7812 to 0.8708 as labels increase, but full CLIP reaches 0.9852.
+- **Content**: Q1 0.7812 → 0.7886 → 0.8708; B1 0.9242 → 0.9638 → 0.9852. Means ± sample SD across three subset seeds on one outer fold.
+- **Images**: learning_curve.png, fully visible and uncropped.
+- **Visualization**: learning-curve=yes as a pre-rendered evidence image; Native-ready: learning-curve=no.
 
-#### Slide 07 - The paired result is specific: Q1 beats RFF, not the strong nonlinear controls
+#### Slide 07 - Compression, not photonics alone, explains the shortfall
 
-- **Audience move**: From a broad leaderboard view → understanding exactly which quantum claim survives paired comparison.
-- **Layout**: `paired_quantum_differences.png` spans the page under the title; the zero line is visually protected, with one teal annotation on positive RFF differences and oxide-red annotations on ELM/RBF shortfalls.
-- **Title**: The paired result is specific: Q1 beats RFF, not the strong nonlinear controls
-- **Core message**: Q1’s advantage is relative to the locked RFF-15 map; it remains below ELM-15 and PCA-5 RBF at every budget.
-- **Content**: “Q1−RFF: +0.3133 / +0.2238 / +0.2307.” “Q1−ELM: −0.0166 / −0.0432 / −0.0215.” “Q1−PCA-5 RBF: −0.0507 / −0.0558 / −0.0534.” Source: `results/tables/paired_differences.csv`; subset-paired descriptive differences.
-- **Images**: `paired_quantum_differences.png`, fully visible and uncropped.
-- **Visualization**: `paired-differences=yes` as a pre-rendered evidence image; Native-ready: paired-differences=no.
+- **Audience move**: From observing the gap → diagnosing where it appears and which comparative claim survives.
+- **Layout**: compression_performance.png on the left; paired difference callouts on the right.
+- **Title**: Compression, not photonics alone, explains the shortfall
+- **Core message**: PCA-5 removes important signal before the nonlinear map; Q1 beats RFF but remains below ELM and PCA-5 RBF.
+- **Content**: B1−B3 at 12 / 24 / 48 labels: +0.1018 / +0.0993 / +0.0713. Q1−RFF: +0.3133 / +0.2238 / +0.2307. Q1−ELM: −0.0166 / −0.0432 / −0.0215. Q1−PCA-5 RBF: −0.0507 / −0.0558 / −0.0534.
+- **Images**: compression_performance.png, fully visible and uncropped.
+- **Visualization**: compression-comparison=yes as a pre-rendered evidence image; Native-ready: compression-comparison=no.
 
-#### Slide 08 - More launched shots do not resolve the model gap
+#### Slide 08 - Finite-shot sampling is stable but does not rescue accuracy
 
-- **Audience move**: From seeing an ideal-simulation shortfall → understanding that finite-shot sampling is stable here but does not create a performance rescue.
-- **Layout**: `finite_shot_sensitivity.png` sits left; three aligned shot callouts sit right above an acceptance band and a “0 failures” validation mark.
-- **Title**: More launched shots do not resolve the model gap
-- **Core message**: Between 500 and 8,000 launched shots, performance stays near 0.77 and is not monotonic.
-- **Content**: “500: 0.7662 ± 0.0322.” “2,000: 0.7739 ± 0.0308.” “8,000: 0.7725 ± 0.0363.” “Acceptance ≈ 0.754; 0 zero-acceptance failures across 45 evaluations.” Caveat: “Sampled inference uses the ideal-trained readout; this is not noise-aware training.” Source: `results/tables/finite_shot.csv`.
-- **Images**: `finite_shot_sensitivity.png`, fully visible and uncropped.
-- **Visualization**: `shot-sensitivity=yes` as a pre-rendered evidence image; Native-ready: shot-sensitivity=no.
+- **Audience move**: From diagnosing representation loss → understanding the tested sampling behavior and untested physical effects.
+- **Layout**: finite_shot_sensitivity.png left; three shot callouts and a tested/not-tested ledger right.
+- **Title**: Finite-shot sampling is stable but does not rescue accuracy
+- **Core message**: Performance stays near 0.77 from 500 to 8,000 launched shots, with stable acceptance and no zero-acceptance failure.
+- **Content**: 500: 0.7662 ± 0.0322; 2,000: 0.7739 ± 0.0308; 8,000: 0.7725 ± 0.0363; acceptance ≈0.754; zero failures across 45 evaluations. Not tested: loss, phase drift, distinguishability, detector noise, noise-aware training.
+- **Images**: finite_shot_sensitivity.png, fully visible and uncropped.
+- **Visualization**: shot-sensitivity=yes as a pre-rendered evidence image; Native-ready: shot-sensitivity=no.
 
-### Part 3: Decision and next experiment
+### Part 3: Verdict and recommendation
 
-#### Slide 09 - The simulator is fast enough; scientific validity is the real bottleneck
+#### Slide 09 - The application is technically feasible; utility remains open
 
-- **Audience move**: From focusing on model scores → distinguishing computational feasibility from unresolved hardware and generalization risk.
-- **Layout**: The page divides asymmetrically: `runtime_breakdown.png` and two measured runtime figures on the left; a descending uncertainty ladder on the right moves from validated simulator semantics to untested hardware effects.
-- **Title**: The simulator is fast enough; scientific validity is the real bottleneck
-- **Core message**: Runtime supports broader experiments, but one outer fold and ideal optics limit what the result can claim.
-- **Content**: “OpenCLIP extraction: 96.57 s on CPU.” “Instrumented R1 after embeddings: ≈59.9 s; Q1 candidate fitting/validation ≈26.0 s; Q1 test inference 8.37 s.” Limits: one outer test fold; small validation cells; B1 near ceiling; no loss, distinguishability, phase drift, detector noise, or QPU queue; acceptance ≈0.74; no deployment-population confidence interval. Source: `results/tables/compute_cost.csv`; `reports/pilot_report_vi.md`.
-- **Images**: `runtime_breakdown.png`, contained within its evidence region and fully visible.
-- **Visualization**: `runtime-breakdown=yes` as a pre-rendered evidence image; Native-ready: runtime-breakdown=no. Qualitative uncertainty ladder: simulator correctness → repeated subsets → outer-fold generalization → realistic photonic noise → hardware execution.
+- **Audience move**: From individual results → a calibrated feasibility verdict.
+- **Layout**: Three evidence tiers across the page with runtime proof below.
+- **Title**: The application is technically feasible; utility remains open
+- **Core message**: Pipeline correctness and reproducibility are proven; multi-fold generalization, realistic noise, and hardware remain unanswered.
+- **Content**: Proven: executable pipeline, simulator semantics, reproducible artifacts. Partially answered: learning signal, paired one-fold comparison, finite-shot sampling. Unanswered: five-fold generalization, realistic photonic noise, remote hardware. Runtime: OpenCLIP 96.57 s; R1 after embeddings ≈59.9 s.
+- **Images**: runtime_breakdown.png as a compact supporting chart, fully visible.
+- **Visualization**: Three status tiers plus measured runtime strip; Native-ready: runtime-breakdown=no.
 
-#### Slide 10 - Continue only if a falsifiable gate can change the decision
+#### Slide 10 - Recommendation: continue only through a decision-changing test
 
-- **Audience move**: From accepting the limitations → agreeing on a disciplined 8–12 week plan and a clear stop condition.
-- **Layout**: Breathing close with a four-stage horizontal path and a large conditional gate at the end; the GitHub repository link sits as a compact handoff object, not a generic thank-you.
-- **Title**: Continue only if a falsifiable gate can change the decision
-- **Core message**: Scale the experiment only if Q1 closes the ELM/RBF gap across outer folds or demonstrates a valuable resource tradeoff.
-- **Content**: “Weeks 1–2: run the frozen five-fold R4 protocol.” “Weeks 3–4: diagnose PCA-5 loss; preregister circuit/measurement ablations.” “Weeks 5–6: add distinguishability, phase error, loss, and detector effects.” “Weeks 7–8: remote simulator/QPU subset with raw counts and calibration.” “Weeks 9–12: harder dataset or independent replication.” Stop condition: “If Q1 only beats RFF while B1/ELM/RBF stay better, report hardware feasibility without an application utility case.” Handoff link: “Repository: https://github.com/MonsieurNam/Quanova_Photonic_Defect_QML”.
-- **Visualization**: Qualitative staged path with an oxide-red decision gate and two terminal outcomes: “utility evidence” or “feasibility-only conclusion.”
-
+- **Audience move**: From the feasibility verdict → receiving a direct recommendation to the research team.
+- **Layout**: Three answer statements followed by one large conditional decision gate and the repository handoff.
+- **Title**: Recommendation: continue only through a decision-changing test
+- **Core message**: Choose the application for its real need and platform fit, but invest further only if stronger evidence can establish utility.
+- **Content**: “Choice: few-label industrial defect inspection with a photonic reservoir.” “Why: real label scarcity, compact phase encoding, measurable within 12 weeks.” “Current verdict: technically feasible and scientifically interesting, with no demonstrated practical advantage yet.” Continue only if Q1 closes the ELM/RBF gap across outer folds or shows resource value; stop if it only beats RFF. Keep the existing repository URL.
+- **Visualization**: Answer stack → continue/stop gate → repository handoff.
 ## X. Speaker Notes Requirements
 
 - **Generation**: enabled
@@ -233,4 +232,4 @@
 - **Content**: Write complete English presenter notes for every slide. Lead with the page takeaway, explain the evidence in plain technical language, state caveats where they affect interpretation, expand acronyms on first use, and distinguish measured pilot results from proposed future work. Preserve all numbers and never imply QPU/hardware execution.
 - **Total duration**: 12–15 minutes
 - **Notes style**: Conversational, technically precise, candid, and suitable for a technical interview panel
-- **Presentation purpose**: Explain the system, report and account for the completed pilot, demonstrate experimental judgment, and align on a conditional next-stage feasibility plan
+- **Presentation purpose**: Answer the Quandela application-choice prompt directly, explain platform fit and the 12-week approach, use the completed pilot as de-risking evidence, and recommend a conditional next step

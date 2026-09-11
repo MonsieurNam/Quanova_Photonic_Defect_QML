@@ -25,5 +25,6 @@
 - `notes/total.md`: complete English speaker notes, split one-to-one into `P01.md` through `P10.md`
 
 The final SVG quality gate reported zero blocking findings. The native PPTX package passed
-postflight with ten slides and ten note pages. A PowerPoint-rendered contact sheet was inspected,
-including a source-level repair to the finite-shot chart axis labels before the final export.
+postflight with ten slides and ten note pages. Every slide was rendered at 1920×1080 through
+Microsoft PowerPoint and inspected; source-level repairs resolved the timeline-card and CPU-timing
+text collisions before the final export.

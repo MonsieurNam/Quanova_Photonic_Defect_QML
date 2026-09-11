@@ -1,57 +1,57 @@
-# 1_A reproducible photonic pilot delivers a useful negative result
+# 1_I would investigate few-label industrial defect inspection with a photonic reservoir
 
-This case study asks whether a small, transparent photonic feature map can add value in few-label steel defect classification. In one frozen outer-fold pilot measured on 11 September 2026, the photonic model reaches a macro-F1 of 0.8708 at forty-eight labels per class. The full CLIP embedding with a linear classifier reaches 0.9852 on the same test fold, leaving a gap of 0.1143. The photonic model does beat the locked random Fourier feature baseline, but it does not beat ELM, the RBF-SVM controls, or the full embedding. That result is useful because it identifies a concrete representation bottleneck and gives the next experiment a falsifiable decision gate.
-
----
-
-# 2_The benchmark starts with 1,800 audited images
-
-The benchmark contains 1,800 valid images, balanced across six surface-defect classes with three hundred images per class: crazing, inclusion, patches, pitted surface, rolled-in scale, and scratches. The audit quarantined no invalid files, but it found one exact duplicate pair, Pa_101 and Pa_105. Those two images share one duplicate group, so they can never cross the train, validation, and test boundary. Fold zero uses seed forty-two and holds out sixty images per class, with checks confirming there is no sample-ID or duplicate-group overlap. This group-safe split matters because even one duplicated image on both sides could make a small-data result look stronger than it is.
+I would investigate few-label industrial defect inspection using a fixed photonic reservoir. I chose it because expert defect labels are costly, photonic interference provides a compact nonlinear feature map, and the idea can be evaluated rigorously within twelve weeks using public data, matched classical controls, and a staged path from simulation to hardware. I have already completed a de-risking pilot: Q1 reached a macro-F1 of 0.8708 at forty-eight labels per class. That result shows useful signal, but it does not yet show a practical or quantum advantage.
 
 ---
 
-# 3_The circuit is fixed; only phase encoding changes
+# 2_Why this is a good 12-week feasibility study
 
-Every model starts from a frozen OpenCLIP ViT-B/32 embedding, which is L2-normalized. PCA is fitted on training data only, reduces the representation to five dimensions, and scales those values into the phase range from minus pi to pi. The ideal photonic map uses six modes and two photons: modes zero through four encode the input while mode five acts as a reference, with occupation one-zero-one-zero-zero-zero. A fixed Haar-random unitary appears on both sides of the diagonal phase encoding, and postselection converts twenty-one possible outputs into a fifteen-dimensional conditional probability feature vector for a linear readout. Map seeds 101, 202, and 303 are averaged rather than selected or ensembled. Independent checks against Perceval 1.2.4 and MerLin 0.4.1 agree to about four times ten to the minus seventeen and eight times ten to the minus seventeen maximum error, respectively, which supports the simulator semantics used here.
-
----
-
-# 4_The protocol makes overclaiming difficult
-
-The paired label budgets are twelve, twenty-four, and forty-eight examples per class, divided into eight plus four, sixteen plus eight, and thirty-two plus sixteen for training and validation. Subset seeds eleven, twenty-two, and thirty-three are nested and share the same outer test fold. Seven model families face the same test gate: linear and RBF classifiers on full CLIP, linear and RBF classifiers on PCA-five, random Fourier features with fifteen outputs, ELM with fifteen outputs, and the fifteen-output photonic model. The first-run ledger contains 1,404 candidate fits but only 117 test evaluations. Hyperparameters are selected using validation macro-F1, map seeds are averaged rather than picked, training and validation are not refit together, and each selected configuration receives one locked test evaluation. Because evaluations reuse one outer test set, the repeated cells improve descriptive stability but do not create independent estimates of population generalization.
+The application begins with a real operational constraint: industrial inspection images can be plentiful, while reliable defect labels require scarce expert time. That makes performance at twelve, twenty-four, and forty-eight labels per class a meaningful and measurable target. NEU-CLS provides 1,800 audited images across six balanced surface-defect classes, so the first feasibility study can run without waiting for proprietary data collection. The evaluation also has a clear failure mode. One exact duplicate pair, Pa_101 and Pa_105, stays in the same group, and the pilot test fold holds sixty images per class with no sample or duplicate-group overlap. This gives the project three properties I want in a short research assignment: a real need, accessible evidence, and a quantitative decision metric.
 
 ---
 
-# 5_Q1 improves with labels, but full embeddings dominate
+# 3_A small photonic reservoir fits Quandela’s path to hardware
 
-The learning curves show that the photonic model learns useful structure as the label budget rises: mean macro-F1 moves from 0.7812 at twelve labels per class to 0.7886 at twenty-four and 0.8708 at forty-eight. The full CLIP linear model is already at 0.9242 at the smallest budget and reaches 0.9852 at the largest. At forty-eight labels, Q1 therefore trails B1 by 0.1143, even though its own gain with more labels is real. Each point is the mean across three subset seeds, and the uncertainty bars are sample standard deviations, so the chart should be read as a measured pattern on this outer fold. The evidence supports continued study of the learned photonic representation, but it gives no case for discarding the full embedding.
-
----
-
-# 6_PCA-5 compression explains much of the gap
-
-Compressing the CLIP embedding to five principal components causes a large performance penalty before any nonlinear map is applied. For the linear classifier, the full-minus-PCA gap is 0.1018, 0.0993, and 0.0713 at label budgets twelve, twenty-four, and forty-eight. For the RBF classifier, the corresponding gaps are 0.0657, 0.0872, and 0.0263. At twenty-four labels per class, PCA-five linear scores 0.8646, PCA-five RBF scores 0.8444, ELM scores 0.8318, and Q1 scores 0.7886. The key implication is that information is lost during compression, before the classical or photonic nonlinear feature map is evaluated. Any follow-up should therefore separate the effect of compression from the effect of the circuit.
+The architecture is deliberately hybrid and small. A frozen OpenCLIP encoder produces image embeddings; PCA is fitted on training data only and reduces each embedding to five values scaled into the phase range from minus pi to pi. Those phases enter a fixed six-mode, two-photon circuit, and postselection converts twenty-one possible outcomes into fifteen conditional probabilities for a linear readout. The trainable part remains classical, so the experiment isolates the contribution of the photonic map without requiring a costly variational loop. Perceval provides the Quandela simulation layer, and its probabilities agree with an independent MerLin implementation to machine precision. That simulator check is complete. A remote QPU subset is the proposed final validation gate and has not yet been executed, so the current evidence must not be described as a hardware result.
 
 ---
 
-# 7_Q1 beats RFF, not the strong nonlinear controls
+# 4_The feasibility question is deliberately falsifiable
 
-Pairing results by subset makes the comparison direction clear. Against the fifteen-feature random Fourier map, Q1 gains 0.3133, 0.2238, and 0.2307 macro-F1 at twelve, twenty-four, and forty-eight labels per class. Against ELM, however, Q1 is lower by 0.0166, 0.0432, and 0.0215. Against PCA-five RBF, it is lower by 0.0507, 0.0558, and 0.0534. These are descriptive differences paired within the same subset and outer test fold, so they reveal a consistent ranking without supporting a broad significance claim. The result narrows the claim to a specific weak baseline: this photonic map is better than locked RFF, but it does not establish an advantage over the stronger nonlinear controls.
-
----
-
-# 8_More launched shots do not resolve the model gap
-
-Finite-shot inference was evaluated fifteen times at each of three shot counts. Mean macro-F1 is 0.7662 with five hundred launched shots, 0.7739 with two thousand, and 0.7725 with eight thousand; the sample standard deviations are about 0.0322, 0.0308, and 0.0363. Acceptance stays near 0.754 and there are no zero-acceptance failures across all forty-five evaluations. Increasing the number of launched shots therefore produces no meaningful recovery toward the ideal-model benchmark. This test uses a readout trained on ideal probabilities, rather than noise-aware training, so it isolates sampling sensitivity but does not represent a complete hardware-noise study.
+The feasibility question is narrower than asking whether quantum machine learning is generally better. At the same five-dimensional compressed input and fifteen-dimensional output, can Q1 beat a matched random Fourier feature map and close the gap to stronger nonlinear controls such as ELM and RBF-SVM? Alternatively, can it demonstrate an accuracy, sampling, or resource trade-off with practical value? The benchmark uses paired label budgets of twelve, twenty-four, and forty-eight examples per class, three nested subset seeds, and the same locked outer test fold. Seven model families separate the effects of full embeddings, PCA compression, nonlinear mapping, and output dimension. Hyperparameters are selected using validation macro-F1 only, while map seeds are averaged rather than selected. The continue gate is evidence against strong controls across outer folds or a useful resource trade-off. If Q1 only beats RFF, the stop conclusion is feasibility without utility.
 
 ---
 
-# 9_Scientific validity, not runtime, is the bottleneck
+# 5_A 12-week plan moves from simulation to a decision
 
-On the measured local CPU run, OpenCLIP feature extraction takes 96.57 seconds and the first-run benchmark after embeddings takes about 59.9 seconds. Within that benchmark, Q1 candidate fitting and validation accounts for about twenty-six seconds, with roughly 8.37 seconds for its test inference, so the pilot is computationally manageable. The stronger limitation is the evidence ladder: simulator semantics are validated, repeated subset evaluations are complete, and one outer-fold generalization test exists, while realistic photonic noise and hardware execution remain untested. The result also depends on small validation cells, and the full CLIP linear baseline is already near ceiling. Runtime is therefore not the current decision constraint; external validity under more folds, harder data, noise, and hardware is.
+The twelve-week plan removes uncertainty in stages and delays scarce hardware time until the earlier gates pass. Weeks one and two freeze the data audit, leakage-safe splits, metrics, classical baselines, and stopping criteria. Weeks three and four implement the Perceval circuit and require agreement with an independent simulator before benchmarking. Weeks five and six run the paired model matrix across five outer folds to test whether the ranking generalizes beyond the pilot. Weeks seven and eight introduce finite-shot sampling, photon loss, phase drift, distinguishability, detector effects, and noise-aware training where appropriate. Weeks nine and ten run a frozen remote subset with raw counts and calibration metadata, but only if the simulation and noise gates remain credible. Weeks eleven and twelve replicate on a harder dataset, document resource accounting, and issue a go-or-stop decision memo.
 
 ---
 
-# 10_Continue only if a falsifiable gate can change the decision
+# 6_The pilot shows useful signal—not competitive advantage
 
-The next experiment is a twelve-week conditional program. Weeks one and two freeze an R4 protocol with five outer folds; weeks three and four preregister PCA and circuit ablations; weeks five and six add loss, phase drift, and detector effects; weeks seven and eight run a remote subset with raw counts and calibration; and weeks nine through twelve replicate on a harder dataset. The program continues only if Q1 closes the ELM or RBF gap across outer folds, or demonstrates a resource tradeoff with practical value. If Q1 continues to beat only RFF, the correct conclusion is feasibility without utility and the line should stop. The complete code, protocol, results, and interview materials are available in the linked GitHub repository for reproduction and review.
+The completed pilot provides early evidence rather than the final answer. Q1 macro-F1 rises from 0.7812 at twelve labels per class to 0.7886 at twenty-four and 0.8708 at forty-eight. The upward trend means the photonic feature map contains useful class information. However, the full CLIP linear baseline starts at 0.9242 and reaches 0.9852 at the largest budget. Each point is the mean across three subset seeds, with sample-standard-deviation error bars, but all points reuse one outer test fold. The disciplined interpretation is therefore that Q1 learns useful structure on this pilot, while the current configuration does not justify replacing the full embedding or claiming competitive advantage.
+
+---
+
+# 7_Compression—not photonics alone—explains the shortfall
+
+The diagnostic result changes what the next experiment should test. Moving from the full embedding to PCA-five costs the linear baseline 0.1018, 0.0993, and 0.0713 macro-F1 across the three budgets, so important information is lost before the nonlinear map is evaluated. Within the compressed comparison, Q1 beats matched RFF by 0.3133, 0.2238, and 0.2307. It still trails ELM by between roughly 0.02 and 0.04, and trails PCA-five RBF by about 0.05 to 0.06 at every budget. The surviving claim is specific: the photonic map is better than one weak matched random map, but not the stronger nonlinear controls. The next study must therefore vary representation size and circuit design separately rather than attributing the entire gap to photonics.
+
+---
+
+# 8_Finite-shot sampling is stable; accuracy does not recover
+
+The finite-shot test asks whether sampled output probabilities behave stably enough to support a later hardware comparison. Mean macro-F1 is 0.7662 with five hundred launched shots, 0.7739 with two thousand, and 0.7725 with eight thousand, based on fifteen evaluations at each level. Acceptance remains close to 0.754, and none of the forty-five evaluations suffers a zero-acceptance failure. Increasing shots does not produce a monotonic accuracy recovery, so shot count alone does not close the model gap. This experiment tests sampling and postselection around an ideal-trained readout. It does not yet include photon loss, phase drift, partial distinguishability, detector noise, or noise-aware training, which are explicit tasks in the proposed twelve-week plan.
+
+---
+
+# 9_Technically feasible; practical utility remains open
+
+The current evidence supports a calibrated three-level verdict. Technical feasibility is proven: the pipeline executes, simulator semantics agree independently, and the artifacts are reproducible. Application signal is partially answered: Q1 improves with labels, the paired one-fold ranking is known, and finite-shot sampling is stable in the tested range. Practical utility remains unanswered because we do not yet have five-fold generalization, realistic photonic noise, or remote hardware execution. Runtime does not block that work. On the measured local CPU run, OpenCLIP extraction took 96.57 seconds and the first benchmark after embeddings took about 59.9 seconds. The real bottleneck is scientific validity under more folds, harder data, realistic noise, and calibrated hardware—not local computation time.
+
+---
+
+# 10_Recommendation: continue only through a decision-changing test
+
+My application choice is few-label industrial defect inspection with a fixed photonic reservoir. I chose it because label scarcity is real, the compact phase-encoded feature map fits Quandela’s simulator-to-hardware workflow, and the evidence can be produced within twelve weeks. The completed pilot says the idea is technically feasible and scientifically interesting, but it has not demonstrated practical advantage. I would continue only through the predefined next gates: Q1 must close the ELM or RBF gap across outer folds, or demonstrate a resource trade-off that matters in practice. If it continues to beat only RFF while the strong controls remain better, I would report feasibility without utility and stop. The repository linked here contains the protocol, implementation, results, and presentation artifacts needed to reproduce that decision.
