@@ -15,7 +15,7 @@ This document defines the prospective decision rule discussed in the interview d
 
 **Pass A — accuracy parity**
 
-Q1 reaches within 0.02 macro-F1 of PCA-5 RBF-SVM on at least four of five outer folds at the same label budget.
+At 48 labels per class, Q1 reaches within 0.02 macro-F1 of PCA-5 RBF-SVM on at least four of five outer folds.
 
 **Pass B — practical resource value through label efficiency**
 
@@ -28,7 +28,7 @@ This defines “resource value” as a twofold reduction in labelled examples un
 
 ## Stop rule
 
-Stop the application track if neither pass route holds. Also stop if Q1 fails to outperform both matched 15-D controls on at least four of five outer folds. Report such an outcome as technical feasibility without demonstrated practical utility.
+Stop the application track if neither pass route holds. Also stop if Q1 loses to both RFF-15 and ELM-15 on at least four of five outer folds. Report such an outcome as simulation-pipeline feasibility without demonstrated practical or hardware utility.
 
 ## Sequence
 

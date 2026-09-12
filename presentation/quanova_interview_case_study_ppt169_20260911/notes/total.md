@@ -1,60 +1,57 @@
 # 1_I would investigate few-label industrial defect inspection with a photonic reservoir
 
-
-# 1_I would investigate few-label industrial defect inspection with a photonic reservoir
-
-Good afternoon. I am Nguyen Ngo Nhat Nam, and I would investigate few-label industrial defect inspection using a fixed photonic reservoir. I chose it for three reasons: expert defect labels are costly, photonic interference offers a compact nonlinear feature map, and the idea can be evaluated rigorously within twelve weeks using public data, matched controls, and a staged path from simulation to hardware. I have already completed a de-risking pilot. Q1 reached 0.8708 macro-F1 at forty-eight labels per class. That is useful signal, but it is not evidence of practical or quantum advantage.
+Good afternoon. I am Nguyen Ngo Nhat Nam. I would investigate few-label industrial defect inspection with a fixed photonic reservoir. Expert labels are costly, interference offers a compact nonlinear map, and the question can be tested in twelve weeks with public data, matched controls, and a simulator-to-hardware path. My completed pilot reached 0.8708 macro-F1 at forty-eight labels per class. That demonstrates useful signal in simulation, not practical or quantum advantage. The choice matters only if the constraint is real and the test is measurable.
 
 ---
 
 # 2_Why this is a good 12-week feasibility study
 
-The operational constraint is label scarcity. Inspection images may be plentiful, but reliable defect labels consume expert time. Performance at twelve, twenty-four, and forty-eight labels per class is therefore a meaningful target. NEU-CLS gives 1,800 audited images across six balanced steel-surface defect classes, so the study can start without waiting for proprietary data. The evaluation also has a clear failure mode: the exact duplicate pair Pa_101 and Pa_105 remains in one group, and the pilot test fold contains sixty images per class with no sample or duplicate-group overlap. This gives a real need, accessible evidence, and a quantitative decision.
+The operational constraint is label scarcity: inspection images may be plentiful, while reliable labels require expert time. NEU-CLS provides 1,800 audited images across six balanced defect classes, so the study can begin without proprietary collection. The exact duplicate pair Pa_101 and Pa_105 remains in one group, and the pilot test fold has sixty images per class with no overlap. The application therefore has a real need, accessible evidence, and a measurable failure condition. Now I will show where photonics enters.
 
 ---
 
 # 3_A small photonic reservoir fits Quandela’s path to hardware
 
-The architecture is deliberately hybrid and small. A frozen OpenCLIP encoder produces an image embedding. Principal component analysis is fitted on training data only and reduces it to five values scaled from minus pi to pi. Those phases enter a fixed six-mode, two-photon circuit. Postselection turns twenty-one possible outcomes into fifteen conditional probabilities for a linear readout. Only the readout is trained, which isolates the feature map and avoids a costly variational loop. Perceval is the primary simulation layer. A second implementation in MerLin reproduces the probabilities to machine precision. That is a separate code path inside the same ecosystem, not external replication. Both checks are complete. Remote QPU execution remains a proposed final gate, subject to access.
+A frozen OpenCLIP encoder produces an embedding. Train-only principal component analysis reduces it to five phase values. A fixed six-mode, two-photon circuit maps them to fifteen postselected probabilities for a linear readout. Only the readout is trained, which isolates the feature map. Perceval is the primary simulation path; MerLin reproduces the ideal probabilities to machine precision through a separate code path, not external replication. Remote QPU execution remains untested and conditional on access and prior gates. A runnable simulation is only a starting point, so I need a rule that can reject it.
 
 ---
 
 # 4_The feasibility question is deliberately falsifiable
 
-The question is specific: from the same PCA-five input, can Q1’s fifteen-dimensional photonic features beat matched fifteen-dimensional controls and approach PCA-five RBF-SVM? RFF means random Fourier features; ELM means extreme learning machine; and RBF-SVM means radial-basis-function support vector machine. The protocol uses nested label budgets, validation-only selection, averaged map seeds, and one test evaluation per selected fitted pipeline. I would preregister two pass routes. Accuracy passes if Q1 is within 0.02 macro-F1 of PCA-five RBF-SVM on at least four of five outer folds. Resource value passes if Q1 with twenty-four labels per class reaches the forty-eight-label RBF-SVM within 0.02 on at least four folds, using at most two thousand launched shots per image and an acceptance rate of at least 0.70. If neither route passes, or Q1 fails both matched controls on at least four folds, I stop.
+From the same PCA-five input, can Q1 beat matched fifteen-dimensional controls and approach PCA-five RBF-SVM? RFF means random Fourier features; ELM means extreme learning machine. I preregister two pass routes. Pass A: at forty-eight labels per class, Q1 is within 0.02 macro-F1 of RBF-SVM on at least four of five folds. Pass B: Q1 at twenty-four labels reaches the forty-eight-label RBF-SVM within 0.02 on four folds, using at most two thousand shots per image and acceptance of at least 0.70. I stop if neither passes, or Q1 loses to both RFF-15 and ELM-15 on four folds. These gates define the proposed project; the pilot is already complete.
 
 ---
 
 # 5_The 12-week project starts after the completed pilot
 
-The pilot is pre-study evidence; it does not consume the twelve-week project. The dataset audit, frozen protocol, simulator checks, finite-shot test, and fold-zero result are complete. Weeks one and two replicate all five outer folds. Weeks three and four ablate PCA dimension, circuit design, and measurement choices. Weeks five and six add loss, phase drift, partial distinguishability, detector effects, and noise-aware training. Weeks seven and eight select and freeze one hardware candidate, including preprocessing, shot definition, and calibration fields. Weeks nine and ten run a remote QPU subset only if the earlier gates pass. Weeks eleven and twelve use harder data or an independent evaluation, account for resources, and produce a go-or-stop memo.
+The pilot is pre-study evidence and does not consume the project clock. Weeks one and two replicate five outer folds. Weeks three and four ablate PCA, circuit, and measurement choices. Weeks five and six add realistic photonic noise. Weeks seven and eight freeze one hardware candidate and its resource definitions. Weeks nine and ten run a remote subset only if prior gates pass. Weeks eleven and twelve use harder data or independent replication and produce the decision memo. Here is what the pilot actually found.
 
 ---
 
 # 6_The pilot shows useful signal—not competitive advantage
 
-Here is the primary pilot evidence. Q1 rises from 0.7812 at twelve labels per class to 0.7886 at twenty-four and 0.8708 at forty-eight. The upward trend shows that the photonic features contain class information. The full OpenCLIP linear baseline, however, starts at 0.9242 and reaches 0.9852. Each point averages three subset seeds, with sample-standard-deviation error bars, but all points reuse one outer test fold. The correct conclusion is that Q1 learns useful structure on this pilot while the current configuration does not justify replacing the full embedding or claiming an advantage.
+Q1 rises from 0.7812 to 0.7886 and then 0.8708 as the label budget grows. The full OpenCLIP linear baseline starts at 0.9242 and reaches 0.9852. Each point averages three subset seeds, but every point reuses one outer test fold. The correct conclusion is limited: Q1 contains useful class information in this simulation pilot, while the current map is not competitive with the full representation. The controlled comparison shows where that gap comes from.
 
 ---
 
 # 7_Compression—not photonics alone—explains the shortfall
 
-The diagnosis changes the next experiment. Compressing the full embedding to five principal components costs the linear baseline about 0.07 to 0.10 macro-F1, so information is lost before the nonlinear map is tested. Within the compressed comparison, Q1 beats the locked RFF-fifteen comparator by about 0.22 to 0.31. It still trails ELM by roughly 0.02 to 0.04 and PCA-five RBF-SVM by about 0.05 to 0.06. The surviving claim is narrow: this photonic map is better than one matched random-feature control, but not the stronger nonlinear controls. I would therefore vary representation size and circuit design separately.
+PCA-five costs the linear baseline about 0.07 to 0.10 macro-F1, so important information is lost before the nonlinear comparison. Within the compressed setting, Q1 beats the locked RFF-15 comparator by 0.22 to 0.31. It still trails ELM by about 0.02 to 0.04 and PCA-five RBF-SVM by about 0.05 to 0.06. I would therefore vary representation size and circuit design separately rather than attributing the whole gap to photonics. Before proposing hardware, I also tested whether sampling is stable.
 
 ---
 
 # 8_Finite-shot sampling is stable; accuracy does not recover
 
-The finite-shot test asks whether sampled probabilities are stable enough for a later hardware comparison. Macro-F1 is 0.7662 at five hundred launched shots, 0.7739 at two thousand, and 0.7725 at eight thousand. Each shot level contains fifteen evaluations: three map seeds times five sampling seeds. Across all three levels, that is forty-five evaluations on the same outer test fold. Acceptance stays near 0.754, with no zero-acceptance failure. More shots do not recover accuracy monotonically, so shot count alone does not close the gap. This tests sampling around an ideal-trained readout; loss, drift, distinguishability, detectors, and noise-aware training remain future work.
+Macro-F1 remains near 0.77 from five hundred to eight thousand launched shots. Each level contains three map seeds times five sampling seeds; all forty-five evaluations share one outer test fold. Acceptance stays near 0.754 with no zero-acceptance failures. More shots do not recover accuracy, so sampling noise is not the main limitation in this range. Photon loss, phase drift, distinguishability, detector effects, and noise-aware training remain untested. These results define the current evidence boundary.
 
 ---
 
-# 9_Technically feasible; practical utility remains open
+# 9_Simulation feasibility demonstrated; hardware remains untested
 
-The evidence supports a three-level verdict. Technical feasibility is proven: the pipeline executes, two implementations agree, and the artifacts are reproducible. Application signal is partly answered: Q1 improves with labels, the paired one-fold ranking is known, and finite-shot sampling is stable in the tested range. Practical utility remains open because five-fold generalization, realistic noise, and remote hardware are unfinished. Local runtime is not the constraint: cached OpenCLIP extraction took 96.57 seconds, and the pilot model grid took about 59.9 seconds on CPU. The bottleneck is scientific validity under more folds, stronger controls, realistic noise, and calibrated hardware.
+The demonstrated result is simulation-pipeline feasibility: the code executes, two implementation paths agree, and the artifacts are reproducible. Application signal is only partly answered because the ranking comes from one outer fold. Hardware feasibility remains untested because realistic noise and remote execution are unfinished. Local computation is not the bottleneck: embedding extraction took 96.57 seconds and the pilot model grid about 59.9 seconds. The bottleneck is scientific validity across folds, noise, and calibrated hardware. That boundary leads to a conditional recommendation.
 
 ---
 
 # 10_Recommendation: continue only through a decision-changing test
 
-My recommendation is to continue this application only through a decision-changing test. The case is worth testing because label scarcity is real, the compact circuit fits Quandela’s simulator-to-hardware path, and the pilot proves that the workflow can be executed. It has not yet demonstrated practical advantage. I would continue only if the preregistered accuracy-parity or label-efficiency gate passes. If Q1 still beats only RFF while ELM and RBF-SVM remain stronger, I would report technical feasibility without utility and stop. The repository link contains the protocol, implementation, results, and presentation artifacts needed to audit that decision. Thank you.
+My recommendation is conditional. Few-label defect inspection fits a useful Quandela simulator-to-hardware study, and the pilot shows that the simulation workflow is executable. It has not demonstrated practical or hardware advantage. I continue only if Pass A at forty-eight labels or Pass B for twofold label efficiency holds. The shot and acceptance constraints belong only to Pass B. If neither passes, or Q1 loses to RFF-15 and ELM-15 on at least four folds, I report simulation feasibility without utility and stop before spending QPU time. Thank you.

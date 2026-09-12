@@ -6,7 +6,7 @@
 
 ## Phiên bản 30 giây
 
-I would investigate few-label industrial defect inspection using a fixed photonic reservoir. It addresses a real constraint—expert defect labels are expensive—while a small phase-encoded circuit gives Quandela a credible near-term role as a nonlinear feature map. The idea is testable within twelve weeks using public data, strong matched baselines, Perceval, finite-shot and noise studies, and a conditional hardware subset. My pilot shows technical feasibility and useful signal, but no practical advantage yet, so I would continue only if the next study closes the ELM or RBF gap or demonstrates a useful resource trade-off.
+I would investigate few-label industrial defect inspection using a fixed photonic reservoir. It addresses a real constraint—expert defect labels are expensive—while a small phase-encoded circuit gives Quandela a credible near-term role as a nonlinear feature map. The idea is testable within twelve weeks using public data, strong matched baselines, Perceval, finite-shot and noise studies, and a conditional hardware subset. My pilot demonstrates simulation-pipeline feasibility and useful signal, while hardware feasibility and practical advantage remain untested.
 
 ## Phiên bản 90 giây
 
@@ -16,7 +16,7 @@ I chose this application because industrial inspection has a genuine label-scarc
 
 The dataset audit, frozen protocol, simulator verification, finite-shot check, and fold-zero pilot are already complete. The twelve-week project would therefore begin with five-fold replication, followed by PCA, circuit, and measurement ablations; realistic-noise studies; a frozen hardware candidate; and a small remote-hardware subset only if the earlier gates pass. Success means closing the ELM or RBF gap across outer folds or demonstrating a useful resource trade-off.
 
-I have already completed a de-risking pilot. Q1 reached 0.8708 macro-F1 and clearly beat matched RFF, but it remained below ELM, RBF-SVM, and the full CLIP representation. Therefore, the current conclusion is technical feasibility without demonstrated application utility.
+I have already completed a de-risking pilot. Q1 reached 0.8708 macro-F1 and clearly beat matched RFF, but it remained below ELM, RBF-SVM, and the full CLIP representation. Therefore, the current conclusion is simulation-pipeline feasibility without demonstrated application or hardware utility.
 
 ## Phiên bản khoảng 3 phút
 

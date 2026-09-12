@@ -23,7 +23,8 @@
 - `../../deliverables/Quanova_Photonic_QML_Interview_Case_Study_20260911.pptx`
 - `../../deliverables/Quanova_Photonic_QML_Interview_Case_Study_20260911.pdf`
 - `notes/total.md`: complete English speaker notes, split one-to-one into `P01.md` through `P10.md`
-- `../../reports/interview_12min_runbook_vi.md`: rehearsal timing, transitions, and cut rules
+- `../../reports/interview_10min_runbook_vi.md`: rehearsal timing, transitions, and cut rules
+- `../../reports/quandela_panel_simulation_vi.md`: three-role technical panel simulation and scoring rubric
 - `../../reports/technical_interview_drill_vi.md`: concise technical Q&A practice set
 - `../../docs/proposed_12_week_protocol.md`: prospective quantitative pass/stop rules
 

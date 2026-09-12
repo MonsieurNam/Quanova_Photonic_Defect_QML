@@ -12,7 +12,7 @@
 | Target Audience | Quandela technical interview panel evaluating application choice, photonic-platform fit, execution discipline, and scientific judgment. |
 | Communication Intent | Answer which application to choose, why it is promising for Quandela, and how to test feasibility within 2–3 months, using the completed pilot as de-risking evidence. |
 | Desired Audience Outcome | The panel can see a concrete application choice, understand the platform rationale and 12-week workplan, and judge the proposal against explicit continue/stop criteria. |
-| Core Message / Ask / Action | Choose few-label industrial defect inspection with a fixed photonic reservoir; the pilot proves technical feasibility and useful signal but not practical advantage, so continue only through a falsifiable multi-fold, noise-aware, simulator-to-hardware plan. |
+| Core Message / Ask / Action | Choose few-label industrial defect inspection with a fixed photonic reservoir; the pilot demonstrates simulation-pipeline feasibility and useful signal while hardware remains untested, so continue only through a falsifiable multi-fold, noise-aware, simulator-to-hardware plan. |
 | Delivery Context | Primarily a presenter-led 12–15 minute technical interview talk; secondarily a concise reader-led review copy for follow-up. |
 | Artifact Afterlife | Technical handoff and audit trail linking claims to the repository, measured results, and next-stage protocol. |
 | Reading Mode | balanced |
@@ -122,8 +122,8 @@ Use the darker accent-body colors for text at 20 px or smaller on light fields. 
 | neu_cls_pitted_surface.png | 200 × 200 | 1.00 | Orient the audience to the pitted-surface class | Dataset sample | Equal-height six-sample strip with label below | no-crop | user | Existing | NEU-CLS `PS_1.bmp`, converted losslessly to PNG | none | local |
 | neu_cls_rolled_in_scale.png | 200 × 200 | 1.00 | Orient the audience to the rolled-in-scale class | Dataset sample | Equal-height six-sample strip with label below | no-crop | user | Existing | NEU-CLS `RS_1.bmp`, converted losslessly to PNG | none | local |
 | neu_cls_scratches.png | 200 × 200 | 1.00 | Orient the audience to the scratches class | Dataset sample | Equal-height six-sample strip with label below | no-crop | user | Existing | NEU-CLS `Sc_1.bmp`, converted losslessly to PNG | none | local |
-| learning_curve.png | 1904 × 1024 | 1.86 | Show all families across the three label budgets | Result chart | Dominant full-width evidence field with conclusion callout beside the plot | no-crop | user | Existing | `results/figures/learning_curve.png`; preserve axes, legend, and uncertainty marks | none | local |
-| compression_performance.png | 1904 × 1024 | 1.86 | Isolate the penalty from PCA-5 compression and the remaining feature-map gap | Result chart | Large plot paired with a narrow interpretation column | no-crop | user | Existing | `results/figures/compression_performance.png`; preserve all labels | none | local |
+| learning_curve.png | 1904 × 1024 | 1.86 | Show all families across the three label budgets | Result chart | Dominant full-width evidence field with conclusion callout beside the plot | no-crop | user | Existing | `results/figures/learning_curve.png`; use endpoint labels and preserve axes | none | local |
+| compression_performance.png | 1904 × 1024 | 1.86 | Isolate the penalty from PCA-5 compression and the remaining feature-map gap | Result chart | Large plot paired with a narrow interpretation column | no-crop | user | Existing | `results/figures/compression_performance.png`; use a lower-left legend with full model names | none | local |
 | finite_shot_sensitivity.png | 1684 × 980 | 1.72 | Show finite-shot sensitivity and non-monotonic performance | Result chart | Plot on the left with acceptance/failure callouts on the right | no-crop | user | Existing | `results/figures/finite_shot_sensitivity.png`; preserve error bars and shot labels | none | local |
 
 ## IX. Content Outline
@@ -165,7 +165,7 @@ Use the darker accent-body colors for text at 20 px or smaller on light fields. 
 - **Layout**: Central question, equal-width schematic baseline rows, compact protocol ledger, and two quantitative pass gates plus one stop gate.
 - **Title**: The feasibility question is deliberately falsifiable
 - **Core message**: At the same PCA-5 input, Q1’s 15-D photonic features must approach PCA-5 RBF-SVM or establish a pre-specified label-efficiency advantage under a bounded shot budget.
-- **Content**: Label budgets 12 / 24 / 48; subset seeds 11 / 22 / 33; B1–B6 and Q1; validation-only selection; map seeds averaged, never picked; one test evaluation per selected fitted pipeline. Repeated evaluations share one outer test fold. Pass A: Q1 is within 0.02 macro-F1 of PCA-5 RBF-SVM on at least 4/5 outer folds. Pass B: Q1 at 24 labels/class is within 0.02 of PCA-5 RBF-SVM at 48 labels/class on at least 4/5 folds, with no more than 2,000 launched shots per image and acceptance rate at least 0.70. Stop if neither criterion holds or Q1 fails both matched 15-D controls on at least 4/5 folds. Define RFF, ELM, and RBF-SVM at first appearance.
+- **Content**: Label budgets 12 / 24 / 48; subset seeds 11 / 22 / 33; B1–B6 and Q1; validation-only selection; map seeds averaged, never picked; one test evaluation per selected fitted pipeline. Repeated evaluations share one outer test fold. Pass A: at 48 labels per class, Q1 is within 0.02 macro-F1 of PCA-5 RBF-SVM on at least 4/5 outer folds. Pass B: Q1 at 24 labels/class is within 0.02 of PCA-5 RBF-SVM at 48 labels/class on at least 4/5 folds, with no more than 2,000 launched shots per image and acceptance rate at least 0.70. Stop if neither criterion holds or Q1 loses to both RFF-15 and ELM-15 on at least 4/5 folds. Define RFF, ELM, and RBF-SVM at first appearance.
 - **Visualization**: Question → matched controls → locked test → two decision gates.
 
 #### Slide 05 - The 12-week project starts after the completed pilot
@@ -211,13 +211,13 @@ Use the darker accent-body colors for text at 20 px or smaller on light fields. 
 
 ### Part 3: Verdict and recommendation
 
-#### Slide 09 - The application is technically feasible; utility remains open
+#### Slide 09 - Simulation feasibility is demonstrated; hardware remains untested
 
 - **Audience move**: From individual results → a calibrated feasibility verdict.
 - **Layout**: Three evidence tiers across the page with two large runtime KPIs and the scientific-validity constraint below.
-- **Title**: The application is technically feasible; utility remains open
-- **Core message**: Pipeline correctness and reproducibility are proven; multi-fold generalization, realistic noise, and hardware remain unanswered.
-- **Content**: Proven: executable pipeline, simulator semantics, reproducible artifacts. Partially answered: learning signal, paired one-fold comparison, finite-shot sampling. Unanswered: five-fold generalization, realistic photonic noise, remote hardware. Runtime: OpenCLIP 96.57 s; R1 after embeddings ≈59.9 s.
+- **Title**: Simulation feasibility demonstrated; hardware remains untested
+- **Core message**: The simulation pipeline and reproducible workflow are demonstrated; realistic noise and hardware feasibility remain unanswered.
+- **Content**: Demonstrated: executable simulation pipeline, simulator consistency, reproducible artifacts. Partially answered: learning signal, paired one-fold comparison, finite-shot sampling. Unanswered: five-fold generalization, realistic photonic noise, remote hardware. Runtime: OpenCLIP 96.57 s; R1 after embeddings ≈59.9 s.
 - **Visualization**: Three status tiers plus large measured-runtime KPI cards; no small runtime chart.
 
 #### Slide 10 - Recommendation: continue only through a decision-changing test
@@ -226,13 +226,13 @@ Use the darker accent-body colors for text at 20 px or smaller on light fields. 
 - **Layout**: Three answer statements followed by one large conditional decision gate and the repository handoff.
 - **Title**: Recommendation: continue only through a decision-changing test
 - **Core message**: Choose the application for its real need and platform fit, but invest further only if stronger evidence can establish utility.
-- **Content**: “Choice: few-label industrial defect inspection with a photonic reservoir.” “Why: real label scarcity, compact phase encoding, measurable within 12 weeks.” “Current verdict: technically feasible and scientifically interesting, with no demonstrated practical advantage yet.” Continue only if the pre-specified accuracy-parity or label-efficiency gate passes; otherwise report feasibility without utility and stop. Keep the existing repository URL.
+- **Content**: “Choice: few-label industrial defect inspection with a photonic reservoir.” “Why: real label scarcity, compact phase encoding, and a Quandela simulator-to-hardware path.” “Current verdict: feasible in simulation and scientifically interesting; hardware feasibility remains untested.” Continue only if the pre-specified accuracy-parity or label-efficiency gate passes; otherwise report simulation feasibility without utility and stop. Keep the existing repository URL.
 - **Visualization**: Answer stack → continue/stop gate → repository handoff.
 ## X. Speaker Notes Requirements
 
 - **Generation**: enabled
 - **Filename**: match each SVG filename under `notes/`
 - **Content**: Write complete English presenter notes for every slide. Lead with the page takeaway, explain the evidence in plain technical language, state caveats where they affect interpretation, expand acronyms on first use, and distinguish measured pilot results from proposed future work. Preserve all numbers and never imply QPU/hardware execution.
-- **Total duration**: 12 minutes, including transitions and a short pause before the final recommendation
+- **Total duration**: 10 minutes, including transitions and a short pause before the final recommendation
 - **Notes style**: Conversational, technically precise, candid, and suitable for a technical interview panel
 - **Presentation purpose**: Answer the Quandela application-choice prompt directly, explain platform fit and the 12-week approach, use the completed pilot as de-risking evidence, and recommend a conditional next step

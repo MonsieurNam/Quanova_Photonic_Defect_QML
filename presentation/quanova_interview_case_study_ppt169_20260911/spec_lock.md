@@ -9,7 +9,7 @@
 - primary_language: en-US
 - audience: Quandela technical interview panel evaluating application choice, photonic-platform fit, execution discipline, and scientific judgment
 - objective: Answer which application to choose, why it fits Quandela, and how to test feasibility within 2–3 months, using the completed pilot as de-risking evidence.
-- core_message: Choose few-label industrial defect inspection with a fixed photonic reservoir; the pilot proves technical feasibility and useful signal but not practical advantage, so continue only through a falsifiable multi-fold, noise-aware, simulator-to-hardware plan.
+- core_message: Choose few-label industrial defect inspection with a fixed photonic reservoir; the pilot demonstrates simulation-pipeline feasibility and useful signal while hardware remains untested, so continue only through a falsifiable multi-fold, noise-aware, simulator-to-hardware plan.
 - consumption_mode: balanced
 
 ## mode

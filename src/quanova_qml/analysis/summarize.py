@@ -212,9 +212,47 @@ def summarize_runs(root: Path) -> dict:
     shots_summary.to_csv(table_dir / "finite_shot.csv", index=False)
 
     sns.set_theme(style="whitegrid", context="talk")
-    fig, ax = plt.subplots(figsize=(9, 5))
-    sns.lineplot(data=main, x="budget", y="macro_f1_mean", hue="family", marker="o", ax=ax)
-    ax.set(xlabel="Total labeled examples per class (train + validation)", ylabel="Macro-F1", ylim=(0, 1.02))
+    figure_names = {
+        "B1": "B1 Full CLIP + linear",
+        "B2": "B2 Full CLIP + RBF-SVM",
+        "B3": "B3 PCA-5 + linear",
+        "B4": "B4 PCA-5 + RBF-SVM",
+        "B5": "B5 RFF-15",
+        "B6": "B6 ELM-15",
+        "Q1": "Q1 Photonic-15",
+    }
+    family_order = ["B1", "B2", "B3", "B4", "B5", "B6", "Q1"]
+    palette = dict(zip(family_order, sns.color_palette("colorblind", len(family_order))))
+    label_y = {
+        "B1": 0.975,
+        "B2": 0.94,
+        "B4": 0.905,
+        "B3": 0.87,
+        "B6": 0.835,
+        "Q1": 0.795,
+        "B5": 0.64,
+    }
+    fig, ax = plt.subplots(figsize=(10, 5.2))
+    for family in family_order:
+        values = main.loc[main["family"].eq(family)].sort_values("budget")
+        ax.plot(values["budget"], values["macro_f1_mean"], marker="o", color=palette[family])
+        final = values.iloc[-1]
+        ax.annotate(
+            figure_names[family],
+            xy=(final["budget"], final["macro_f1_mean"]),
+            xytext=(51, label_y[family]),
+            color=palette[family],
+            fontsize=10,
+            fontweight="bold",
+            va="center",
+            arrowprops={"arrowstyle": "-", "color": palette[family], "linewidth": 1},
+        )
+    ax.set(
+        xlabel="Total labeled examples per class (train + validation)",
+        ylabel="Macro-F1",
+        xlim=(10, 68),
+        ylim=(0, 1.02),
+    )
     _save_figure(fig, figure_dir, "learning_curve", main)
 
     delta_long = paired.melt(
@@ -230,8 +268,26 @@ def summarize_runs(root: Path) -> dict:
     _save_figure(fig, figure_dir, "paired_quantum_differences", delta_long)
 
     compression_long = raw.loc[raw["family"].isin(["B1", "B2", "B3", "B4"])].copy()
-    fig, ax = plt.subplots(figsize=(9, 5))
-    sns.lineplot(data=compression_long, x="budget", y="macro_f1", hue="family", marker="o", errorbar="sd", ax=ax)
+    compression_names = {
+        "B1": "B1 Full CLIP + linear",
+        "B2": "B2 Full CLIP + RBF-SVM",
+        "B3": "B3 PCA-5 + linear",
+        "B4": "B4 PCA-5 + RBF-SVM",
+    }
+    fig, ax = plt.subplots(figsize=(10, 5.2))
+    for family in ["B1", "B2", "B3", "B4"]:
+        values = compression_long.loc[compression_long["family"].eq(family)]
+        sns.lineplot(
+            data=values,
+            x="budget",
+            y="macro_f1",
+            marker="o",
+            errorbar="sd",
+            color=palette[family],
+            label=compression_names[family],
+            ax=ax,
+        )
+    ax.legend(title="Model", loc="lower left", frameon=True, fontsize=11, title_fontsize=11)
     ax.set(xlabel="Labels per class", ylabel="Macro-F1", ylim=(0, 1.02))
     _save_figure(fig, figure_dir, "compression_performance", compression_long)
 

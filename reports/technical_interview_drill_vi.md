@@ -54,7 +54,7 @@ Mỗi câu trả lời ngắn dưới đây nên nói trong 25–45 giây. Phầ
 
 ## 12. Why not claim quantum advantage?
 
-**Answer:** “There is no basis for that claim. Strong classical controls win, the pilot uses ideal simulation and one outer fold, and no QPU run has been completed. The present claim is technical feasibility with an application signal.”
+**Answer:** “There is no basis for that claim. Strong classical controls win, the pilot uses ideal simulation and one outer fold, and no QPU run has been completed. The present claim is simulation-pipeline feasibility with an application signal.”
 
 ## 13. What is the falsifiable success criterion?
 
@@ -90,7 +90,7 @@ Mỗi câu trả lời ngắn dưới đây nên nói trong 25–45 giây. Phầ
 
 ## 21. What would make you stop early?
 
-**Answer:** “I stop if neither pre-specified pass route holds, or if Q1 fails both matched 15-dimensional controls on at least four folds. I would publish the negative result as feasibility without utility rather than moving to hardware by default.”
+**Answer:** “I stop if neither pre-specified pass route holds, or if Q1 loses to both RFF-15 and ELM-15 on at least four folds. I would publish the negative result as simulation feasibility without utility rather than moving to hardware by default.”
 
 ## 22. What is your contribution as an AI researcher?
 

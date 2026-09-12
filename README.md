@@ -22,14 +22,15 @@ small label budgets. It is not designed to claim quantum advantage.
 - [Presentation PDF](deliverables/Quanova_Photonic_QML_Interview_Case_Study_20260911.pdf)
 - [Vietnamese pilot report](reports/pilot_report_vi.md)
 - [Vietnamese interview Q&A](reports/interview_qa_vi.md)
-- [12-minute delivery runbook](reports/interview_12min_runbook_vi.md)
+- [10-minute delivery runbook](reports/interview_10min_runbook_vi.md)
+- [Quandela panel simulation](reports/quandela_panel_simulation_vi.md)
 - [Technical interview drill](reports/technical_interview_drill_vi.md)
 - [Proposed 12-week decision protocol](docs/proposed_12_week_protocol.md)
 - [English speaker notes](presentation/quanova_interview_case_study_ppt169_20260911/notes/total.md)
 
 The deck contains ten native DrawingML slides with embedded speaker notes. It distinguishes the
 completed simulator pilot from the proposed remote-QPU gate and preregisters two continuation paths:
-accuracy parity with PCA-5 RBF-SVM across at least four of five folds, or twofold label efficiency
+accuracy parity with PCA-5 RBF-SVM at 48 labels per class across at least four of five folds, or twofold label efficiency
 under explicit shot and acceptance constraints. It preserves the measured result without claiming
 practical or quantum advantage. Its final package postflight passed, and all slides were rendered
 through Microsoft PowerPoint for visual inspection.
