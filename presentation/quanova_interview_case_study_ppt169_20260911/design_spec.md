@@ -151,9 +151,9 @@
 - **Layout**: Left-to-right hybrid pipeline with a simulator-to-hardware lane below it.
 - **Title**: A small photonic reservoir fits Quandela’s simulator-to-hardware path
 - **Core message**: A frozen encoder and compact phase-encoded circuit isolate the photonic feature map and permit staged validation from Perceval to remote hardware.
-- **Content**: Frozen OpenCLIP → train-only PCA-5 → phases [−π, π] → six modes / two photons → 15 conditional probabilities → linear readout. “Perceval: Quandela simulation layer, completed.” “Independent MerLin check: completed.” “Remote QPU subset: proposed, not yet executed.” Preserve exact numerical verification errors.
+- **Content**: Frozen OpenCLIP → train-only PCA-5 → phases [−π, π] → six modes / two photons → 15 conditional probabilities → linear readout. “Perceval: Quandela simulation layer, completed.” “MerLin second-implementation cross-check: completed.” “Remote QPU subset: proposed, not yet executed.” Preserve exact numerical verification errors and state that the MerLin check is a separate code path, not external replication.
 - **Mathematical content**: U(x)=U D(x) U; phi_Q(x)=Normalize({P(n|x)}).
-- **Visualization**: Main pipeline plus three-stage validation rail: Perceval → independent check → remote QPU.
+- **Visualization**: Main pipeline plus three-stage validation rail: Perceval → second implementation → remote QPU.
 
 #### Slide 04 - The feasibility question is deliberately falsifiable
 
@@ -161,17 +161,17 @@
 - **Layout**: Central question, matched baseline ladder, compact protocol ledger, and explicit continue/stop gates.
 - **Title**: The feasibility question is deliberately falsifiable
 - **Core message**: At matched compressed dimensions, Q1 must beat RFF and close the ELM/RBF gap, or demonstrate a practical resource trade-off.
-- **Content**: Label budgets 12 / 24 / 48; subset seeds 11 / 22 / 33; B1–B6 and Q1; validation-only selection; map seeds averaged, never picked. “Continue: close ELM/RBF gap across outer folds or show resource value.” “Stop: only beat RFF while strong controls remain better.”
+- **Content**: Label budgets 12 / 24 / 48; subset seeds 11 / 22 / 33; B1–B6 and Q1; validation-only selection; map seeds averaged, never picked; one test evaluation per selected fitted pipeline. Repeated evaluations share one outer test fold. “Continue: close ELM/RBF gap across outer folds or show resource value.” “Stop: only beat RFF while strong controls remain better.”
 - **Visualization**: Question → matched controls → locked test → two decision gates.
 
-#### Slide 05 - A 12-week plan moves from simulation to a decision
+#### Slide 05 - The 12-week project starts after the completed pilot
 
-- **Audience move**: From knowing the test → seeing a deliverable-driven project plan that fits the assignment.
-- **Layout**: Six-stage horizontal timeline with a deliverable and exit criterion under every stage.
-- **Title**: A 12-week plan moves from simulation to a decision
-- **Core message**: Each two-week block removes one uncertainty and can stop the project before unnecessary hardware work.
-- **Content**: Weeks 1–2 data, protocol, baselines; 3–4 Perceval and independent checks; 5–6 five-fold paired benchmark; 7–8 finite-shot and realistic noise; 9–10 remote hardware subset with raw counts/calibration; 11–12 harder-data replication, report, go/stop decision.
-- **Visualization**: Six milestones progressing from definition to decision, with hardware work explicitly conditional.
+- **Audience move**: From seeing completed pilot evidence → understanding that the proposed project clock begins with the unanswered feasibility work.
+- **Layout**: A completed pre-study ribbon above a six-stage proposed timeline, with a deliverable and exit criterion under every stage.
+- **Title**: The 12-week project starts after the completed pilot
+- **Core message**: The dataset audit, frozen protocol, simulator verification, and fold-0 result are already complete; the twelve weeks are reserved for decision-changing evidence.
+- **Content**: Pre-study completed: dataset audit, frozen protocol, simulator verification, fold-0 result. Proposed project: weeks 1–2 five-fold replication; 3–4 PCA/circuit/measurement ablations; 5–6 realistic photonic noise; 7–8 select and freeze the hardware candidate; 9–10 remote QPU subset with raw counts/calibration; 11–12 harder-data or independent replication plus decision memo.
+- **Visualization**: Completed-pilot ribbon separated from six proposed milestones; hardware work remains explicitly conditional.
 
 ### Part 2: Pilot evidence and diagnosis
 

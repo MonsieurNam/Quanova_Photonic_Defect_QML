@@ -26,5 +26,6 @@
 
 The final SVG quality gate reported zero blocking findings. The native PPTX package passed
 postflight with ten slides and ten note pages. Every slide was rendered at 1920×1080 through
-Microsoft PowerPoint and inspected; source-level repairs resolved the timeline-card and CPU-timing
-text collisions before the final export.
+Microsoft PowerPoint and inspected. The final narrative separates the completed pilot from the
+proposed twelve-week project, identifies MerLin as a second implementation path, and states that
+each selected pipeline receives one test evaluation.

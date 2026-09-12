@@ -14,7 +14,7 @@ I would investigate few-label industrial visual defect classification using a fi
 
 I chose this application because industrial inspection has a genuine label-scarcity problem, the compact feature-map architecture fits near-term photonic hardware better than a large end-to-end variational model, and the feasibility question can be measured within two to three months. I would compare the photonic map with full-embedding classifiers, PCA controls, RFF, ELM, and RBF-SVM under the same splits and output dimension.
 
-The first weeks would freeze the protocol and verify the Perceval implementation. I would then run paired multi-fold benchmarks, finite-shot and realistic-noise studies, followed by a small remote-hardware subset only if the earlier gates pass. Success means closing the ELM or RBF gap across outer folds or demonstrating a useful resource trade-off.
+The dataset audit, frozen protocol, simulator verification, finite-shot check, and fold-zero pilot are already complete. The twelve-week project would therefore begin with five-fold replication, followed by PCA, circuit, and measurement ablations; realistic-noise studies; a frozen hardware candidate; and a small remote-hardware subset only if the earlier gates pass. Success means closing the ELM or RBF gap across outer folds or demonstrating a useful resource trade-off.
 
 I have already completed a de-risking pilot. Q1 reached 0.8708 macro-F1 and clearly beat matched RFF, but it remained below ELM, RBF-SVM, and the full CLIP representation. Therefore, the current conclusion is technical feasibility without demonstrated application utility.
 
@@ -26,7 +26,7 @@ The system would remain hybrid. I would use a frozen OpenCLIP encoder for visual
 
 I would define feasibility before running the experiment. At the same compressed input and fifteen-dimensional output, Q1 should beat matched random Fourier features and meaningfully close the gap to stronger nonlinear controls such as ELM and RBF-SVM. Alternatively, it should demonstrate a useful resource trade-off in accuracy, shots, latency, or hardware cost. If it only beats RFF while the stronger controls stay better, the project stops with a feasibility-only conclusion.
 
-Weeks one and two would freeze the data audit, group-safe splits, metrics, baseline grids, and stop rule. Weeks three and four would implement the circuit in Perceval and require numerical agreement with an independent implementation. Weeks five and six would run a paired five-fold benchmark across label budgets and random seeds. Weeks seven and eight would add finite-shot sampling, photon loss, phase drift, distinguishability, detector effects, and noise-aware training where justified. Weeks nine and ten would use a remote hardware subset with raw counts and calibration metadata, but only if the previous gates pass. The final two weeks would replicate on a harder dataset, account for resources, and deliver a go-or-stop recommendation.
+The completed pilot is pre-study evidence, rather than weeks one through four of the proposed project. Weeks one and two would replicate the paired benchmark across all five outer folds. Weeks three and four would ablate PCA dimension, circuit design, and measurement choices. Weeks five and six would test realistic photon loss, phase drift, distinguishability, detector effects, and noise-aware training. Weeks seven and eight would select and freeze the hardware candidate, preprocessing, shot definition, calibration fields, and evaluation subset. Weeks nine and ten would use a remote QPU subset with raw counts and calibration metadata, but only if the previous gates pass. The final two weeks would replicate on harder data or through an independent evaluation, account for resources, and deliver a go-or-stop recommendation.
 
 I have already run an initial one-fold pilot to reduce uncertainty. Q1 improves from 0.7812 to 0.8708 macro-F1 as labels increase, so the map contains useful information. It beats matched RFF by about 0.22 to 0.31, but it remains below ELM and PCA-five RBF, while full CLIP plus a linear model reaches 0.9852. The analysis also shows that PCA-five removes substantial information before the circuit runs. Finite-shot inference is stable between five hundred and eight thousand shots, with acceptance near 0.754, but more shots do not restore accuracy.
 
@@ -51,6 +51,14 @@ Một outer fold phù hợp với vai trò de-risking ban đầu: xác minh pipe
 ## Phản biện: Khi nào mới nên dùng hardware?
 
 Chỉ sau khi circuit, shot definition, calibration fields, preprocessing và evaluation set đã được đóng băng; simulator đã được kiểm tra độc lập; benchmark nhiều fold còn đủ triển vọng; và realistic-noise study không cho thấy collapse. Hardware run phải lưu raw counts, calibration metadata, queue/runtime information và mọi failure, thay vì chỉ lưu metric cuối.
+
+## Phản biện: MerLin có phải là independent validation không?
+
+Không theo nghĩa tổ chức độc lập hoặc external replication. MerLin cung cấp một implementation path thứ hai trong hệ sinh thái Quandela để kiểm tra probability semantics của circuit. Vì vậy cách nói chính xác là “second implementation cross-check” hoặc “independent code-path verification with MerLin”. Giá trị của phép kiểm tra là hai code path khớp nhau ở machine precision; nó không thay thế xác nhận phần cứng hay tái lập độc lập từ bên ngoài.
+
+## Phản biện: Deck nói test một lần, vậy tại sao R1 có 117 test evaluations?
+
+“One test evaluation per selected pipeline” nghĩa là mỗi pipeline đã được chọn bằng validation chỉ được đưa sang test đúng một lần. Có nhiều pipeline được chọn trên các family, label budget, subset seed và map seed khác nhau, nên tổng cộng vẫn có 117 R1 test evaluations. Các evaluation này đều dùng chung một outer fold, vì vậy chúng là paired repeated evaluations chứ không phải 117 test dataset độc lập.
 
 ## Phản biện: Quantum đóng góp ở đâu?
 
