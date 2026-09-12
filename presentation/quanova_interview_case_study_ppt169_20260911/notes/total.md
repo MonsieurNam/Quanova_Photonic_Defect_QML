@@ -18,7 +18,7 @@ A frozen OpenCLIP encoder produces an embedding. Train-only principal component 
 
 # 4_The feasibility question is deliberately falsifiable
 
-From the same PCA-five input, can Q1 beat matched fifteen-dimensional controls and approach PCA-five RBF-SVM? RFF means random Fourier features; ELM means extreme learning machine. I preregister two pass routes. Pass A: at forty-eight labels per class, Q1 is within 0.02 macro-F1 of RBF-SVM on at least four of five folds. Pass B: Q1 at twenty-four labels reaches the forty-eight-label RBF-SVM within 0.02 on four folds, using at most two thousand shots per image and acceptance of at least 0.70. I stop if neither passes, or Q1 loses to both RFF-15 and ELM-15 on four folds. These gates define the proposed project; the pilot is already complete.
+From the same PCA-five input, can Q1 beat matched fifteen-dimensional controls and approach B4, the PCA-five RBF-SVM? RFF means random Fourier features; ELM means extreme learning machine. I preregister two pass routes. Pass A: at forty-eight labels per class, Q1 is within 0.02 macro-F1 of B4 on at least four of five folds. Pass B: Q1 at twenty-four labels reaches B4 at forty-eight labels within 0.02 on four folds, using at most two thousand shots per image and acceptance of at least 0.70. I stop if neither passes, or Q1 loses to both RFF-15 and ELM-15 on four folds. These gates define the proposed project; the pilot is already complete.
 
 ---
 
@@ -34,15 +34,15 @@ Q1 rises from 0.7812 to 0.7886 and then 0.8708 as the label budget grows. The fu
 
 ---
 
-# 7_Compression—not photonics alone—explains the shortfall
+# 7_PCA-5 explains most of the gap; the map explains the rest
 
-PCA-five costs the linear baseline about 0.07 to 0.10 macro-F1, so important information is lost before the nonlinear comparison. Within the compressed setting, Q1 beats the locked RFF-15 comparator by 0.22 to 0.31. It still trails ELM by about 0.02 to 0.04 and PCA-five RBF-SVM by about 0.05 to 0.06. I would therefore vary representation size and circuit design separately rather than attributing the whole gap to photonics. Before proposing hardware, I also tested whether sampling is stable.
+PCA-five costs the linear baseline about 0.07 to 0.10 macro-F1, accounting for most of the gap to the full representation. Within the compressed setting, Q1 beats the locked RFF-15 comparator by 0.22 to 0.31. It still trails ELM by about 0.02 to 0.04 and PCA-five RBF-SVM by about 0.05 to 0.06, so map choice explains the remaining shortfall. I would therefore vary representation size and circuit design separately. Before proposing hardware, I also tested whether sampling is stable.
 
 ---
 
 # 8_Finite-shot sampling is stable; accuracy does not recover
 
-Macro-F1 remains near 0.77 from five hundred to eight thousand launched shots. Each level contains three map seeds times five sampling seeds; all forty-five evaluations share one outer test fold. Acceptance stays near 0.754 with no zero-acceptance failures. More shots do not recover accuracy, so sampling noise is not the main limitation in this range. Photon loss, phase drift, distinguishability, detector effects, and noise-aware training remain untested. These results define the current evidence boundary.
+At twenty-four labels per class on outer fold zero, Q1 stays near 0.77 from five hundred to eight thousand shots. Each level has three map seeds by five sampling seeds; all forty-five evaluations share that fold. Acceptance is near 0.754 with no failures. Increasing shots does not recover accuracy, so sampling noise is not the main limitation in this range. Loss, drift, distinguishability, detector effects, and noise-aware training remain untested. These results define the evidence boundary.
 
 ---
 
@@ -54,4 +54,4 @@ The demonstrated result is simulation-pipeline feasibility: the code executes, t
 
 # 10_Recommendation: continue only through a decision-changing test
 
-My recommendation is conditional. Few-label defect inspection fits a useful Quandela simulator-to-hardware study, and the pilot shows that the simulation workflow is executable. It has not demonstrated practical or hardware advantage. I continue only if Pass A at forty-eight labels or Pass B for twofold label efficiency holds. The shot and acceptance constraints belong only to Pass B. If neither passes, or Q1 loses to RFF-15 and ELM-15 on at least four folds, I report simulation feasibility without utility and stop before spending QPU time. Thank you.
+My recommendation is conditional. Few-label defect inspection fits a useful Quandela simulator-to-hardware study, and the pilot shows that the simulation workflow is executable. It has not demonstrated practical or hardware advantage. B4 is the PCA-five RBF-SVM reference. I continue only if Pass A at forty-eight labels or Pass B for twofold label efficiency holds. The shot and acceptance constraints belong only to Pass B. If neither passes, or Q1 loses to RFF-15 and ELM-15 on at least four folds, I report simulation feasibility without utility and stop before spending QPU time. Thank you.

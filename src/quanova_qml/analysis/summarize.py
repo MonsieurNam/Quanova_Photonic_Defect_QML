@@ -223,30 +223,31 @@ def summarize_runs(root: Path) -> dict:
     }
     family_order = ["B1", "B2", "B3", "B4", "B5", "B6", "Q1"]
     palette = dict(zip(family_order, sns.color_palette("colorblind", len(family_order))))
-    label_y = {
-        "B1": 0.975,
-        "B2": 0.94,
-        "B4": 0.905,
-        "B3": 0.87,
-        "B6": 0.835,
-        "Q1": 0.795,
-        "B5": 0.64,
-    }
+    direct_label_y = {"B1": 0.98, "B4": 0.91, "Q1": 0.84}
+    direct_families = set(direct_label_y)
     fig, ax = plt.subplots(figsize=(10, 5.2))
     for family in family_order:
         values = main.loc[main["family"].eq(family)].sort_values("budget")
-        ax.plot(values["budget"], values["macro_f1_mean"], marker="o", color=palette[family])
-        final = values.iloc[-1]
-        ax.annotate(
-            figure_names[family],
-            xy=(final["budget"], final["macro_f1_mean"]),
-            xytext=(51, label_y[family]),
+        ax.plot(
+            values["budget"],
+            values["macro_f1_mean"],
+            marker="o",
             color=palette[family],
-            fontsize=10,
-            fontweight="bold",
-            va="center",
-            arrowprops={"arrowstyle": "-", "color": palette[family], "linewidth": 1},
+            label=figure_names[family] if family not in direct_families else "_nolegend_",
         )
+        if family in direct_families:
+            final = values.iloc[-1]
+            ax.annotate(
+                figure_names[family],
+                xy=(final["budget"], final["macro_f1_mean"]),
+                xytext=(51, direct_label_y[family]),
+                color=palette[family],
+                fontsize=10,
+                fontweight="bold",
+                va="center",
+                arrowprops={"arrowstyle": "-", "color": palette[family], "linewidth": 1},
+            )
+    ax.legend(title="Other controls", loc="lower right", frameon=True, fontsize=9, title_fontsize=9)
     ax.set(
         xlabel="Total labeled examples per class (train + validation)",
         ylabel="Macro-F1",

@@ -58,7 +58,7 @@ Mỗi câu trả lời ngắn dưới đây nên nói trong 25–45 giây. Phầ
 
 ## 13. What is the falsifiable success criterion?
 
-**Answer:** “Accuracy passes if Q1 is within 0.02 macro-F1 of PCA-5 RBF-SVM on at least four of five folds. Resource value passes if Q1 at twenty-four labels per class reaches the forty-eight-label RBF-SVM within 0.02 on at least four folds, with no more than two thousand shots per image and acceptance of at least 0.70.”
+**Answer:** “B4 is the PCA-5 RBF-SVM reference. Accuracy passes if Q1 is within 0.02 macro-F1 of B4 on at least four of five folds. Resource value passes if Q1 at twenty-four labels per class reaches B4 at forty-eight labels within 0.02 on at least four folds, with no more than two thousand shots per image and acceptance of at least 0.70.”
 
 ## 14. Why choose 0.02?
 

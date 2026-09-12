@@ -122,7 +122,7 @@ Use the darker accent-body colors for text at 20 px or smaller on light fields. 
 | neu_cls_pitted_surface.png | 200 × 200 | 1.00 | Orient the audience to the pitted-surface class | Dataset sample | Equal-height six-sample strip with label below | no-crop | user | Existing | NEU-CLS `PS_1.bmp`, converted losslessly to PNG | none | local |
 | neu_cls_rolled_in_scale.png | 200 × 200 | 1.00 | Orient the audience to the rolled-in-scale class | Dataset sample | Equal-height six-sample strip with label below | no-crop | user | Existing | NEU-CLS `RS_1.bmp`, converted losslessly to PNG | none | local |
 | neu_cls_scratches.png | 200 × 200 | 1.00 | Orient the audience to the scratches class | Dataset sample | Equal-height six-sample strip with label below | no-crop | user | Existing | NEU-CLS `Sc_1.bmp`, converted losslessly to PNG | none | local |
-| learning_curve.png | 1904 × 1024 | 1.86 | Show all families across the three label budgets | Result chart | Dominant full-width evidence field with conclusion callout beside the plot | no-crop | user | Existing | `results/figures/learning_curve.png`; use endpoint labels and preserve axes | none | local |
+| learning_curve.png | 1904 × 1024 | 1.86 | Show all families across the three label budgets | Result chart | Dominant full-width evidence field with conclusion callout beside the plot | no-crop | user | Existing | `results/figures/learning_curve.png`; directly label Q1, B1, and B4; place remaining controls in a lower-right legend | none | local |
 | compression_performance.png | 1904 × 1024 | 1.86 | Isolate the penalty from PCA-5 compression and the remaining feature-map gap | Result chart | Large plot paired with a narrow interpretation column | no-crop | user | Existing | `results/figures/compression_performance.png`; use a lower-left legend with full model names | none | local |
 | finite_shot_sensitivity.png | 1684 × 980 | 1.72 | Show finite-shot sensitivity and non-monotonic performance | Result chart | Plot on the left with acceptance/failure callouts on the right | no-crop | user | Existing | `results/figures/finite_shot_sensitivity.png`; preserve error bars and shot labels | none | local |
 
@@ -165,7 +165,7 @@ Use the darker accent-body colors for text at 20 px or smaller on light fields. 
 - **Layout**: Central question, equal-width schematic baseline rows, compact protocol ledger, and two quantitative pass gates plus one stop gate.
 - **Title**: The feasibility question is deliberately falsifiable
 - **Core message**: At the same PCA-5 input, Q1’s 15-D photonic features must approach PCA-5 RBF-SVM or establish a pre-specified label-efficiency advantage under a bounded shot budget.
-- **Content**: Label budgets 12 / 24 / 48; subset seeds 11 / 22 / 33; B1–B6 and Q1; validation-only selection; map seeds averaged, never picked; one test evaluation per selected fitted pipeline. Repeated evaluations share one outer test fold. Pass A: at 48 labels per class, Q1 is within 0.02 macro-F1 of PCA-5 RBF-SVM on at least 4/5 outer folds. Pass B: Q1 at 24 labels/class is within 0.02 of PCA-5 RBF-SVM at 48 labels/class on at least 4/5 folds, with no more than 2,000 launched shots per image and acceptance rate at least 0.70. Stop if neither criterion holds or Q1 loses to both RFF-15 and ELM-15 on at least 4/5 folds. Define RFF, ELM, and RBF-SVM at first appearance.
+- **Content**: Label budgets 12 / 24 / 48; subset seeds 11 / 22 / 33; B1–B6 and Q1; validation-only selection; map seeds averaged, never picked; one test evaluation per selected fitted pipeline. Repeated evaluations share one outer test fold. Define B4 explicitly as PCA-5 RBF-SVM. Pass A: at 48 labels per class, Q1 is within 0.02 macro-F1 of B4 on at least 4/5 outer folds. Pass B: Q1 at 24 labels/class is within 0.02 of B4 at 48 labels/class on at least 4/5 folds, with no more than 2,000 launched shots per image and acceptance rate at least 0.70. Stop if neither criterion holds or Q1 loses to both RFF-15 and ELM-15 on at least 4/5 folds. Define RFF, ELM, and RBF-SVM at first appearance.
 - **Visualization**: Question → matched controls → locked test → two decision gates.
 
 #### Slide 05 - The 12-week project starts after the completed pilot
@@ -189,12 +189,12 @@ Use the darker accent-body colors for text at 20 px or smaller on light fields. 
 - **Images**: learning_curve.png, fully visible and uncropped.
 - **Visualization**: learning-curve=yes as a pre-rendered evidence image; Native-ready: learning-curve=no.
 
-#### Slide 07 - Compression, not photonics alone, explains the shortfall
+#### Slide 07 - PCA-5 explains most of the gap; the map explains the rest
 
 - **Audience move**: From observing the gap → diagnosing where it appears and which comparative claim survives.
 - **Layout**: compression_performance.png on the left; paired difference callouts on the right.
-- **Title**: Compression, not photonics alone, explains the shortfall
-- **Core message**: PCA-5 removes important signal before the nonlinear map; Q1 beats RFF but remains below ELM and PCA-5 RBF.
+- **Title**: PCA-5 explains most of the gap; the map explains the rest
+- **Core message**: PCA-5 accounts for most of the deficit relative to full features; Q1 beats RFF but remains below ELM and PCA-5 RBF.
 - **Content**: B1−B3 at 12 / 24 / 48 labels: +0.1018 / +0.0993 / +0.0713. Q1−RFF: +0.3133 / +0.2238 / +0.2307. Q1−ELM: −0.0166 / −0.0432 / −0.0215. Q1−PCA-5 RBF: −0.0507 / −0.0558 / −0.0534.
 - **Images**: compression_performance.png, fully visible and uncropped.
 - **Visualization**: compression-comparison=yes as a pre-rendered evidence image; Native-ready: compression-comparison=no.
@@ -205,7 +205,7 @@ Use the darker accent-body colors for text at 20 px or smaller on light fields. 
 - **Layout**: finite_shot_sensitivity.png left with direct series labels; three shot callouts and a tested/not-tested ledger right.
 - **Title**: Finite-shot sampling is stable but does not rescue accuracy
 - **Core message**: Performance stays near 0.77 from 500 to 8,000 launched shots, with stable acceptance and no zero-acceptance failure.
-- **Content**: 500: 0.7662 ± 0.0322; 2,000: 0.7739 ± 0.0308; 8,000: 0.7725 ± 0.0363; acceptance ≈0.754; zero failures across 45 evaluations. The 45 evaluations are 3 map seeds × 5 sampling seeds × 3 shot levels on the same outer test fold. Not tested: loss, phase drift, distinguishability, detector noise, noise-aware training.
+- **Content**: Q1 at 24 labels/class on outer fold 0. 500: 0.7662 ± 0.0322; 2,000: 0.7739 ± 0.0308; 8,000: 0.7725 ± 0.0363; acceptance ≈0.754; zero failures across 45 evaluations. The 45 evaluations are 3 map seeds × 5 sampling seeds × 3 shot levels on the same outer test fold. Not tested: loss, phase drift, distinguishability, detector noise, noise-aware training.
 - **Images**: finite_shot_sensitivity.png, fully visible and uncropped.
 - **Visualization**: shot-sensitivity=yes as a pre-rendered evidence image; Native-ready: shot-sensitivity=no.
 
