@@ -26,7 +26,11 @@
 - primary: #1C2D38
 - accent: #D84924
 - secondary_accent: #2D7A78
+- accent_body: #9B2D17
+- secondary_accent_body: #1B5756
 - body_text: #222222
+
+Large display accents and geometry use the original oxide and teal. Accent text at 20 px or smaller on light, beige, or salmon fields uses the darker body variants for projector readability.
 
 ## typography
 - font_family: Arial, Helvetica, sans-serif
@@ -39,6 +43,7 @@
 - card_title: 28
 - compact_display: 26
 - annotation: 18
+- micro_annotation: 15
 
 ## icons
 - library: tabler-filled
@@ -54,7 +59,6 @@
 - learning-curve: images/learning_curve.png | source=user | pattern=Dominant full-width evidence field with conclusion callout beside the plot | crop=no-crop
 - compression-performance: images/compression_performance.png | source=user | pattern=Large plot paired with a narrow interpretation column | crop=no-crop
 - shot-sensitivity: images/finite_shot_sensitivity.png | source=user | pattern=Plot on the left with acceptance/failure callouts on the right | crop=no-crop
-- runtime-breakdown: images/runtime_breakdown.png | source=user | pattern=Compact plot nested inside a broader limitations-and-readiness page | crop=no-crop
 
 ## page_rhythm
 - P01: anchor

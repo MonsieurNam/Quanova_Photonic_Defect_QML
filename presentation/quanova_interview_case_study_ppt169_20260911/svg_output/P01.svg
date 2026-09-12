@@ -1,14 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-page-role="content">
   <rect id="page-bg" data-pptx-role="background" x="0" y="0" width="1280" height="720" fill="#FBF7EE"/>
   <rect id="top-rule" data-pptx-role="decoration" x="0" y="0" width="1280" height="8" fill="#2D7A78"/>
-  <g id="cover-title" data-pptx-bounds="64 40 1152 232">
-    <text x="64" y="68" font-family="Arial" font-size="18" font-weight="700" letter-spacing="1.4" fill="#2D7A78">QUANDELA · APPLICATION CASE STUDY</text>
+  <g id="cover-title" data-pptx-bounds="64 40 1152 238">
+    <text x="64" y="68" font-family="Arial" font-size="18" font-weight="700" letter-spacing="1.4" fill="#1B5756">QUANDELA · APPLICATION CASE STUDY</text>
     <text x="64" y="126" font-family="Georgia" font-size="42" font-weight="700" fill="#1C2D38">I would investigate few-label industrial<tspan x="64" dy="54">defect inspection with a photonic reservoir</tspan></text>
     <text x="64" y="226" font-family="Arial" font-size="23" fill="#222222">A measurable 12-week path from public data to a conditional hardware test</text>
+    <text x="64" y="258" font-family="Arial" font-size="16" font-weight="700" letter-spacing="0.5" fill="#1B5756">NGUYEN NGO NHAT NAM · R&amp;D QUANTUM OPTICS ENGINEER CANDIDATE · 15 SEP 2026 · 15:30 GMT+7</text>
   </g>
   <g id="rationale-cards" data-pptx-bounds="64 286 1152 178">
     <rect x="64" y="286" width="360" height="178" fill="#EFE6D5"/>
-    <text x="88" y="321" font-family="Arial" font-size="18" font-weight="700" fill="#D84924">REAL INDUSTRIAL NEED</text>
+    <text x="88" y="321" font-family="Arial" font-size="18" font-weight="700" fill="#9B2D17">REAL INDUSTRIAL NEED</text>
     <text x="88" y="359" font-family="Georgia" font-size="30" font-weight="700" fill="#1C2D38">Scarce expert labels</text>
     <text x="88" y="396" font-family="Arial" font-size="20" fill="#222222">Quality inspection needs useful<tspan x="88" dy="28">accuracy from small labelled sets.</tspan></text>
     <rect x="448" y="286" width="360" height="178" fill="#1C2D38"/>
@@ -16,7 +17,7 @@
     <text x="472" y="359" font-family="Georgia" font-size="30" font-weight="700" fill="#FBF7EE">Fixed nonlinear map</text>
     <text x="472" y="396" font-family="Arial" font-size="20" fill="#FBF7EE">Interference transforms compact<tspan x="472" dy="28">phase-encoded image features.</tspan></text>
     <rect x="832" y="286" width="384" height="178" fill="#EFE6D5"/>
-    <text x="856" y="321" font-family="Arial" font-size="18" font-weight="700" fill="#D84924">12-WEEK TEST</text>
+    <text x="856" y="321" font-family="Arial" font-size="18" font-weight="700" fill="#9B2D17">12-WEEK TEST</text>
     <text x="856" y="359" font-family="Georgia" font-size="30" font-weight="700" fill="#1C2D38">Decision-ready result</text>
     <text x="856" y="396" font-family="Arial" font-size="20" fill="#222222">Public data · matched controls<tspan x="856" dy="28">simulator → conditional QPU run</tspan></text>
   </g>

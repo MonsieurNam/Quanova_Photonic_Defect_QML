@@ -1,21 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-page-role="content">
   <rect id="page-bg" data-pptx-role="background" x="0" y="0" width="1280" height="720" fill="#FBF7EE" />
   <rect id="top-rule" data-pptx-role="decoration" x="0" y="0" width="1280" height="8" fill="#2D7A78" />
-  <g id="cover-title" data-pptx-bounds="64 40 1152 232">
-    <text x="64" y="68" font-family="Arial" font-size="18" font-weight="700" letter-spacing="1.4" fill="#2D7A78">QUANDELA · APPLICATION CASE STUDY</text>
-    <text fill="#1C2D38" font-size="42" font-weight="700" font-family="Georgia" x="64" y="126">I would investigate few-label industrial</text><text fill="#1C2D38" font-size="42" font-weight="700" font-family="Georgia" x="64" y="180">defect inspection with a photonic reservoir</text><text x="64" y="226" font-family="Arial" font-size="23" fill="#222222">A measurable 12-week path from public data to a conditional hardware test</text>
+  <g id="cover-title" data-pptx-bounds="64 40 1152 238">
+    <text x="64" y="68" font-family="Arial" font-size="18" font-weight="700" letter-spacing="1.4" fill="#1B5756">QUANDELA · APPLICATION CASE STUDY</text>
+    <text font-weight="700" font-family="Georgia" fill="#1C2D38" font-size="42" x="64" y="126">I would investigate few-label industrial</text><text font-weight="700" font-family="Georgia" fill="#1C2D38" font-size="42" x="64" y="180">defect inspection with a photonic reservoir</text><text x="64" y="226" font-family="Arial" font-size="23" fill="#222222">A measurable 12-week path from public data to a conditional hardware test</text>
+    <text x="64" y="258" font-family="Arial" font-size="16" font-weight="700" letter-spacing="0.5" fill="#1B5756">NGUYEN NGO NHAT NAM · R&amp;D QUANTUM OPTICS ENGINEER CANDIDATE · 15 SEP 2026 · 15:30 GMT+7</text>
   </g>
   <g id="rationale-cards" data-pptx-bounds="64 286 1152 178">
     <rect x="64" y="286" width="360" height="178" fill="#EFE6D5" />
-    <text x="88" y="321" font-family="Arial" font-size="18" font-weight="700" fill="#D84924">REAL INDUSTRIAL NEED</text>
+    <text x="88" y="321" font-family="Arial" font-size="18" font-weight="700" fill="#9B2D17">REAL INDUSTRIAL NEED</text>
     <text x="88" y="359" font-family="Georgia" font-size="30" font-weight="700" fill="#1C2D38">Scarce expert labels</text>
-    <text fill="#222222" font-size="20" font-family="Arial" x="88" y="396">Quality inspection needs useful</text><text fill="#222222" font-size="20" font-family="Arial" x="88" y="424">accuracy from small labelled sets.</text><rect x="448" y="286" width="360" height="178" fill="#1C2D38" />
+    <text font-family="Arial" fill="#222222" font-size="20" x="88" y="396">Quality inspection needs useful</text><text font-family="Arial" fill="#222222" font-size="20" x="88" y="424">accuracy from small labelled sets.</text><rect x="448" y="286" width="360" height="178" fill="#1C2D38" />
     <text x="472" y="321" font-family="Arial" font-size="18" font-weight="700" fill="#B9D0C7">PHOTONIC FIT</text>
     <text x="472" y="359" font-family="Georgia" font-size="30" font-weight="700" fill="#FBF7EE">Fixed nonlinear map</text>
-    <text fill="#FBF7EE" font-size="20" font-family="Arial" x="472" y="396">Interference transforms compact</text><text fill="#FBF7EE" font-size="20" font-family="Arial" x="472" y="424">phase-encoded image features.</text><rect x="832" y="286" width="384" height="178" fill="#EFE6D5" />
-    <text x="856" y="321" font-family="Arial" font-size="18" font-weight="700" fill="#D84924">12-WEEK TEST</text>
+    <text font-family="Arial" fill="#FBF7EE" font-size="20" x="472" y="396">Interference transforms compact</text><text font-family="Arial" fill="#FBF7EE" font-size="20" x="472" y="424">phase-encoded image features.</text><rect x="832" y="286" width="384" height="178" fill="#EFE6D5" />
+    <text x="856" y="321" font-family="Arial" font-size="18" font-weight="700" fill="#9B2D17">12-WEEK TEST</text>
     <text x="856" y="359" font-family="Georgia" font-size="30" font-weight="700" fill="#1C2D38">Decision-ready result</text>
-    <text fill="#222222" font-size="20" font-family="Arial" x="856" y="396">Public data · matched controls</text><text fill="#222222" font-size="20" font-family="Arial" x="856" y="424">simulator → conditional QPU run</text></g>
+    <text font-family="Arial" fill="#222222" font-size="20" x="856" y="396">Public data · matched controls</text><text font-family="Arial" fill="#222222" font-size="20" x="856" y="424">simulator → conditional QPU run</text></g>
   <g id="pilot-proof" data-pptx-bounds="64 500 1152 142">
     <rect x="64" y="500" width="1152" height="142" fill="#2D7A78" />
     <text x="88" y="535" font-family="Arial" font-size="18" font-weight="700" fill="#FBF7EE">COMPLETED DE-RISKING PILOT</text>
@@ -23,6 +24,6 @@
     <text x="362" y="587" font-family="Arial" font-size="20" fill="#FBF7EE">macro-F1 · 48 labels per class</text>
     <line x1="690" y1="522" x2="690" y2="620" stroke="#B9D0C7" stroke-width="2" />
     <text x="722" y="550" font-family="Georgia" font-size="24" font-weight="700" fill="#FFFFFF">Useful signal; no advantage yet</text>
-    <text fill="#FBF7EE" font-size="18" font-family="Arial" x="722" y="588">Evidence informs the next test; it does not support</text><text fill="#FBF7EE" font-size="18" font-family="Arial" x="722" y="613">a quantum-advantage claim.</text></g>
+    <text font-family="Arial" fill="#FBF7EE" font-size="18" x="722" y="588">Evidence informs the next test; it does not support</text><text font-family="Arial" fill="#FBF7EE" font-size="18" x="722" y="613">a quantum-advantage claim.</text></g>
   <g id="page-index" data-pptx-bounds="1124 667 92 30"><text x="1216" y="690" text-anchor="end" font-family="Arial" font-size="18" fill="#766E62">01 / 10</text></g>
 </svg>

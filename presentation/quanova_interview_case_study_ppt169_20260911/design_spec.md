@@ -56,7 +56,11 @@
 | Primary | #1C2D38 | Titles, structural rules, and principal geometry |
 | Accent | #D84924 | Decision points, shortfalls, and falsification gates |
 | Secondary accent | #2D7A78 | Validation checks, confirmed facts, and viable paths |
+| Accent body | #9B2D17 | Small decision text on paper, beige, or salmon fields |
+| Secondary accent body | #1B5756 | Small validation text on paper, beige, or salmon fields |
 | Body text | #222222 | Body copy, labels, notes, and source lines |
+
+Use the darker accent-body colors for text at 20 px or smaller on light fields. Keep the brighter accent colors for rules, filled decision blocks, and large display type.
 
 ## IV. Typography System
 
@@ -83,6 +87,7 @@
 | Card title | 28 |
 | Compact display | 26 |
 | Annotation | 18 |
+| Micro annotation / source | 15 |
 
 ## V. Layout Principles
 
@@ -120,7 +125,6 @@
 | learning_curve.png | 1904 × 1024 | 1.86 | Show all families across the three label budgets | Result chart | Dominant full-width evidence field with conclusion callout beside the plot | no-crop | user | Existing | `results/figures/learning_curve.png`; preserve axes, legend, and uncertainty marks | none | local |
 | compression_performance.png | 1904 × 1024 | 1.86 | Isolate the penalty from PCA-5 compression and the remaining feature-map gap | Result chart | Large plot paired with a narrow interpretation column | no-crop | user | Existing | `results/figures/compression_performance.png`; preserve all labels | none | local |
 | finite_shot_sensitivity.png | 1684 × 980 | 1.72 | Show finite-shot sensitivity and non-monotonic performance | Result chart | Plot on the left with acceptance/failure callouts on the right | no-crop | user | Existing | `results/figures/finite_shot_sensitivity.png`; preserve error bars and shot labels | none | local |
-| runtime_breakdown.png | 1901 × 1024 | 1.86 | Ground the feasibility claim in measured CPU runtime | Result chart | Compact plot nested inside a broader limitations-and-readiness page | no-crop | user | Existing | `results/figures/runtime_breakdown.png`; local CPU profiling only | none | local |
 
 ## IX. Content Outline
 
@@ -158,10 +162,10 @@
 #### Slide 04 - The feasibility question is deliberately falsifiable
 
 - **Audience move**: From understanding the architecture → seeing exactly what would count as evidence for or against utility.
-- **Layout**: Central question, matched baseline ladder, compact protocol ledger, and explicit continue/stop gates.
+- **Layout**: Central question, equal-width schematic baseline rows, compact protocol ledger, and two quantitative pass gates plus one stop gate.
 - **Title**: The feasibility question is deliberately falsifiable
-- **Core message**: At matched compressed dimensions, Q1 must beat RFF and close the ELM/RBF gap, or demonstrate a practical resource trade-off.
-- **Content**: Label budgets 12 / 24 / 48; subset seeds 11 / 22 / 33; B1–B6 and Q1; validation-only selection; map seeds averaged, never picked; one test evaluation per selected fitted pipeline. Repeated evaluations share one outer test fold. “Continue: close ELM/RBF gap across outer folds or show resource value.” “Stop: only beat RFF while strong controls remain better.”
+- **Core message**: At the same PCA-5 input, Q1’s 15-D photonic features must approach PCA-5 RBF-SVM or establish a pre-specified label-efficiency advantage under a bounded shot budget.
+- **Content**: Label budgets 12 / 24 / 48; subset seeds 11 / 22 / 33; B1–B6 and Q1; validation-only selection; map seeds averaged, never picked; one test evaluation per selected fitted pipeline. Repeated evaluations share one outer test fold. Pass A: Q1 is within 0.02 macro-F1 of PCA-5 RBF-SVM on at least 4/5 outer folds. Pass B: Q1 at 24 labels/class is within 0.02 of PCA-5 RBF-SVM at 48 labels/class on at least 4/5 folds, with no more than 2,000 launched shots per image and acceptance rate at least 0.70. Stop if neither criterion holds or Q1 fails both matched 15-D controls on at least 4/5 folds. Define RFF, ELM, and RBF-SVM at first appearance.
 - **Visualization**: Question → matched controls → locked test → two decision gates.
 
 #### Slide 05 - The 12-week project starts after the completed pilot
@@ -198,10 +202,10 @@
 #### Slide 08 - Finite-shot sampling is stable but does not rescue accuracy
 
 - **Audience move**: From diagnosing representation loss → understanding the tested sampling behavior and untested physical effects.
-- **Layout**: finite_shot_sensitivity.png left; three shot callouts and a tested/not-tested ledger right.
+- **Layout**: finite_shot_sensitivity.png left with direct series labels; three shot callouts and a tested/not-tested ledger right.
 - **Title**: Finite-shot sampling is stable but does not rescue accuracy
 - **Core message**: Performance stays near 0.77 from 500 to 8,000 launched shots, with stable acceptance and no zero-acceptance failure.
-- **Content**: 500: 0.7662 ± 0.0322; 2,000: 0.7739 ± 0.0308; 8,000: 0.7725 ± 0.0363; acceptance ≈0.754; zero failures across 45 evaluations. Not tested: loss, phase drift, distinguishability, detector noise, noise-aware training.
+- **Content**: 500: 0.7662 ± 0.0322; 2,000: 0.7739 ± 0.0308; 8,000: 0.7725 ± 0.0363; acceptance ≈0.754; zero failures across 45 evaluations. The 45 evaluations are 3 map seeds × 5 sampling seeds × 3 shot levels on the same outer test fold. Not tested: loss, phase drift, distinguishability, detector noise, noise-aware training.
 - **Images**: finite_shot_sensitivity.png, fully visible and uncropped.
 - **Visualization**: shot-sensitivity=yes as a pre-rendered evidence image; Native-ready: shot-sensitivity=no.
 
@@ -210,12 +214,11 @@
 #### Slide 09 - The application is technically feasible; utility remains open
 
 - **Audience move**: From individual results → a calibrated feasibility verdict.
-- **Layout**: Three evidence tiers across the page with runtime proof below.
+- **Layout**: Three evidence tiers across the page with two large runtime KPIs and the scientific-validity constraint below.
 - **Title**: The application is technically feasible; utility remains open
 - **Core message**: Pipeline correctness and reproducibility are proven; multi-fold generalization, realistic noise, and hardware remain unanswered.
 - **Content**: Proven: executable pipeline, simulator semantics, reproducible artifacts. Partially answered: learning signal, paired one-fold comparison, finite-shot sampling. Unanswered: five-fold generalization, realistic photonic noise, remote hardware. Runtime: OpenCLIP 96.57 s; R1 after embeddings ≈59.9 s.
-- **Images**: runtime_breakdown.png as a compact supporting chart, fully visible.
-- **Visualization**: Three status tiers plus measured runtime strip; Native-ready: runtime-breakdown=no.
+- **Visualization**: Three status tiers plus large measured-runtime KPI cards; no small runtime chart.
 
 #### Slide 10 - Recommendation: continue only through a decision-changing test
 
@@ -223,13 +226,13 @@
 - **Layout**: Three answer statements followed by one large conditional decision gate and the repository handoff.
 - **Title**: Recommendation: continue only through a decision-changing test
 - **Core message**: Choose the application for its real need and platform fit, but invest further only if stronger evidence can establish utility.
-- **Content**: “Choice: few-label industrial defect inspection with a photonic reservoir.” “Why: real label scarcity, compact phase encoding, measurable within 12 weeks.” “Current verdict: technically feasible and scientifically interesting, with no demonstrated practical advantage yet.” Continue only if Q1 closes the ELM/RBF gap across outer folds or shows resource value; stop if it only beats RFF. Keep the existing repository URL.
+- **Content**: “Choice: few-label industrial defect inspection with a photonic reservoir.” “Why: real label scarcity, compact phase encoding, measurable within 12 weeks.” “Current verdict: technically feasible and scientifically interesting, with no demonstrated practical advantage yet.” Continue only if the pre-specified accuracy-parity or label-efficiency gate passes; otherwise report feasibility without utility and stop. Keep the existing repository URL.
 - **Visualization**: Answer stack → continue/stop gate → repository handoff.
 ## X. Speaker Notes Requirements
 
 - **Generation**: enabled
 - **Filename**: match each SVG filename under `notes/`
 - **Content**: Write complete English presenter notes for every slide. Lead with the page takeaway, explain the evidence in plain technical language, state caveats where they affect interpretation, expand acronyms on first use, and distinguish measured pilot results from proposed future work. Preserve all numbers and never imply QPU/hardware execution.
-- **Total duration**: 12–15 minutes
+- **Total duration**: 12 minutes, including transitions and a short pause before the final recommendation
 - **Notes style**: Conversational, technically precise, candid, and suitable for a technical interview panel
 - **Presentation purpose**: Answer the Quandela application-choice prompt directly, explain platform fit and the 12-week approach, use the completed pilot as de-risking evidence, and recommend a conditional next step

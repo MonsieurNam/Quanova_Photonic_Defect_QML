@@ -23,9 +23,14 @@
 - `../../deliverables/Quanova_Photonic_QML_Interview_Case_Study_20260911.pptx`
 - `../../deliverables/Quanova_Photonic_QML_Interview_Case_Study_20260911.pdf`
 - `notes/total.md`: complete English speaker notes, split one-to-one into `P01.md` through `P10.md`
+- `../../reports/interview_12min_runbook_vi.md`: rehearsal timing, transitions, and cut rules
+- `../../reports/technical_interview_drill_vi.md`: concise technical Q&A practice set
+- `../../docs/proposed_12_week_protocol.md`: prospective quantitative pass/stop rules
 
 The final SVG quality gate reported zero blocking findings. The native PPTX package passed
 postflight with ten slides and ten note pages. Every slide was rendered at 1920×1080 through
 Microsoft PowerPoint and inspected. The final narrative separates the completed pilot from the
 proposed twelve-week project, identifies MerLin as a second implementation path, and states that
-each selected pipeline receives one test evaluation.
+each selected pipeline receives one test evaluation. Slide 4 defines numerical accuracy and
+label-efficiency gates; the cover carries the presenter, target role, and interview date; small
+accent text uses darker projector-safe red and teal variants.
